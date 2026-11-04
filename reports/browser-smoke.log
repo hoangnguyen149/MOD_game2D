@@ -1,0 +1,34 @@
+PASS Docker serves browser client at root URL
+PASS server choices loaded from mock API
+PASS password is not prefilled
+PASS demo faults hidden in normal server mode
+PASS canvas is rendered at desktop size
+PASS incorrect login stays on login screen
+PASS incorrect login has a useful error
+PASS browser login loads character name
+PASS initial HP and MP displayed
+PASS password field cleared after login
+PASS credentials and sessions not written to browser storage
+PASS mock session does not use cookies
+PASS WASD moves the rendered character
+PASS arrow keys move character
+PASS movement is sent to server through position API
+PASS skill consumes exactly five MP
+PASS Escape shows pause overlay
+PASS paused movement is stopped
+PASS resume returns to play
+PASS FPS can be hidden
+PASS FPS can be enabled
+PASS HUD theme can change
+PASS volume control accepts mute
+PASS character stays within map boundary
+PASS narrow viewport has no horizontal overflow
+PASS connection failure returns to login without freezing
+PASS connection failure shows recovery message
+PASS login works again after connection failure
+PASS logout returns to login
+PASS browser used actual mock login sessions
+PASS logout revokes server session
+PASS no unhandled browser JavaScript errors
+PASS browser console omits passwords and issued tokens
+33 browser checks passed

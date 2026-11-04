@@ -16,8 +16,8 @@ RUN --network=none dotnet publish mock-server/MockServer.csproj -c Release --sel
 
 FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS server
 WORKDIR /app
-COPY --from=build /out/server/ ./
-COPY --from=build /out/health/ ./health/
+COPY --from=build --chown=app:app /out/server/ ./
+COPY --from=build --chown=app:app /out/health/ ./health/
 ENV DOTNET_EnableDiagnostics=0
 USER app
 EXPOSE 5077
@@ -25,7 +25,7 @@ ENTRYPOINT ["dotnet", "MockServer.dll"]
 
 FROM mcr.microsoft.com/dotnet/runtime:10.0 AS probe
 WORKDIR /app
-COPY --from=build /out/probe/ ./
+COPY --from=build --chown=app:app /out/probe/ ./
 ENV DOTNET_EnableDiagnostics=0
 USER app
 ENTRYPOINT ["dotnet", "ClientProbe.dll"]

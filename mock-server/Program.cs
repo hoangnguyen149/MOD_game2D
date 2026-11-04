@@ -28,6 +28,9 @@ app.Use(async(context,next)=>{
  }
  await next(context);
 });
+// Serve the independent browser client from the same loopback origin as the mock API.
+app.UseDefaultFiles();
+app.UseStaticFiles(new StaticFileOptions{OnPrepareResponse=context=>context.Context.Response.Headers.CacheControl="no-cache"});
 app.MapGet("/health",()=>Results.Ok(new {status="ok",mode="local-mock",demoFaults=enableFaults}));
 app.MapGet("/servers",()=>Results.Ok(new ServerList{servers=[new ServerEntry{id="meadow",name="Local Meadow",url="http://127.0.0.1:5077/"}]}));
 app.MapPost("/login",(LoginRequest? login)=>{

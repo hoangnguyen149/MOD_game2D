@@ -23,5 +23,10 @@
     "file": "OwnedAdventure-v2-source-reports.zip",
     "bytes": 1684646,
     "sha256": "249d73db5b514304bdcc435a2517eb2fdeda63577d65d368b98fa6a82c5de0d5"
+  },
+  {
+    "file": "OwnedAdventure-web-update.zip",
+    "bytes": 16365,
+    "sha256": "c1d7f2279cd35b98afd38a24f3096103cda73b9d73ca54e4ddda1089eca1683f"
   }
 ]

@@ -1,11 +1,11 @@
 # Chạy thử với Docker trên Windows 11
 
-Docker chạy **mock server** và **client kiểm thử không có đồ họa**. Để chơi bản đồ, bạn chạy client Unity bằng Editor trên Windows và kết nối tới server trong Docker. Launcher Windows Forms cũng chạy trên Windows. Hiện chưa có client Unity đã build thành EXE; container kiểm thử không phải bản game có giao diện.
+Docker chạy **mock server và phục vụ client web có thể chơi trong trình duyệt** tại `http://127.0.0.1:5077/`. Đây là client Canvas viết riêng, không cần Unity Hub, không phải Unity WebGL. Xem [hướng dẫn chơi web](WEB-PLAY.md). Client Unity và launcher Windows Forms vẫn có thể chạy riêng trên Windows. Chưa có client Unity đã build thành EXE; container client-probe vẫn là bài kiểm thử không giao diện.
 
 ## Chuẩn bị
 
 1. Cài Docker Desktop cho Windows, bật backend WSL 2 và dùng **Linux containers**. Mở Docker Desktop, đợi engine hoạt động.
-2. Cài Git để lấy mã mới nhất. Nếu chơi bằng giao diện, cài Unity Hub và Unity **6.3 LTS** cho project `game-client`.
+2. Cài Git để lấy mã mới nhất. Nếu chọn client Unity, cài Unity Hub và Unity **6.3 LTS** cho project `game-client`. Chơi client web bằng Chrome/Edge/Cốc Cốc chỉ cần Docker và trình duyệt.
 3. Mở PowerShell tại thư mục repository:
 
 ```powershell
@@ -42,6 +42,16 @@ docker compose logs --tail 100 mock-server
 Compose chỉ publish `127.0.0.1:5077:5077`, nên client trên chính máy Windows dùng cùng địa chỉ `http://127.0.0.1:5077/`. Không cần đổi server URL trong client sang tên service Docker.
 
 Bản native chạy ngoài Docker vẫn bind loopback và kiểm IP loopback. Compose bật rõ `ContainerDemo=true` để server trong container bind interface nội bộ và nhận kết nối qua Docker bridge. Cổng được giới hạn ở loopback của host; không đổi thành `5077:5077` nếu chỉ thử local. Chế độ container không phải cơ chế xác thực hoặc cấu hình production.
+
+## Mở game web
+
+Sau khi server healthy, mở trình duyệt:
+
+```powershell
+Start-Process 'http://127.0.0.1:5077/'
+```
+
+Đăng nhập demo / local-demo-only. Dùng WASD/mũi tên để di chuyển, Space dùng kỹ năng và Esc tạm dừng. Client web là prototype viết riêng với tài nguyên tự tạo. Nếu trước đây bạn dùng ZIP cũ, lấy gói cập nhật trong hướng dẫn web trước khi build lại.
 
 ## Kiểm tra luồng đăng nhập bằng container
 
@@ -122,7 +132,7 @@ Script chỉ kiểm tra service đã chạy, không tự khởi động hay dừ
 
 Đã build và chạy thực tế trên Docker Engine Linux 29.9.2 / Compose 2.40.3: server healthy, ClientProbe login/servers/characters/position/logout thành công; 14 kiểm tra host API/quyền/port/log và 8 kiểm tra lỗi demo (22/22) pass. Sau thay đổi đã chạy lại 62 kiểm tra native API/config/launcher/HTTP/log và đều pass. Tất cả container/network do phiên test tạo đã được dọn; image giữ lại làm cache. Windows Docker Desktop và Unity GUI chưa được chạy trong môi trường này; chúng cần kiểm chứng trên máy của bạn. Xem [báo cáo Docker](../reports/DOCKER-VALIDATION.md).
 
-Docker Desktop Linux containers không trực tiếp chạy EXE Unity Windows hoặc WinForms. Windows containers không cung cấp desktop tương tác cho ứng dụng cần GUI. Chưa có WebGL build, VNC hay lớp tương thích Wine trong project này.
+Docker Desktop Linux containers không trực tiếp chạy EXE Unity Windows hoặc WinForms. Windows containers không cung cấp desktop tương tác cho ứng dụng cần GUI. Client web mới là HTML Canvas độc lập; chưa có WebGL build từ Unity, VNC hay lớp tương thích Wine trong project này.
 
 Tài liệu chính thức:
 

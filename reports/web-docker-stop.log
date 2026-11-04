@@ -1,0 +1,6 @@
+ Container owned-web-check-mock-server-1  Stopping
+ Container owned-web-check-mock-server-1  Stopped
+ Container owned-web-check-mock-server-1  Removing
+ Container owned-web-check-mock-server-1  Removed
+ Network owned-web-check_default  Removing
+ Network owned-web-check_default  Removed

@@ -25,6 +25,17 @@ reports/         static evidence and actual verification logs
 downloads/       requested v1 archives and separately labelled v2 artifacts
 ```
 
+## Chơi trên trình duyệt qua Docker
+
+Không cần Unity Hub cho client web độc lập:
+
+```powershell
+docker compose up -d --build --wait mock-server
+Start-Process 'http://127.0.0.1:5077/'
+```
+
+Đăng nhập `demo` / `local-demo-only`, chơi WASD/mũi tên, Space dùng kỹ năng, Esc tạm dừng. Client Canvas viết riêng trong `mock-server/wwwroot`; không phải bản Unity/WebGL hoặc game tham khảo được khôi phục. [Hướng dẫn chơi web](docs/WEB-PLAY.md), [gói cập nhật nhỏ cho thư mục Docker đã giải nén](downloads/OwnedAdventure-web-update.zip), [ảnh chạy thật](docs/media/web-play.png). Đã pass 33 kiểm tra browser Chromium và 14 kiểm tra Docker API sau cập nhật.
+
 ## Chạy từ mã nguồn
 
 Cài .NET 10 SDK (project pin 10.0.403). Từ repository:
@@ -50,4 +61,4 @@ docker compose up -d --build --wait mock-server
 docker compose --profile check run --rm --build client-probe
 ```
 
-Để chơi có giao diện, mở `game-client` bằng Unity Editor trên Windows, kết nối Local Meadow tại `127.0.0.1:5077`. Container probe không phải game Unity có đồ họa. Dừng server bằng `docker compose down`. [Hướng dẫn Docker đầy đủ](docs/DOCKER.md), [kết quả Docker thực tế](reports/DOCKER-VALIDATION.md). Các ZIP cũ trong downloads là snapshot trước khi thêm Docker; dùng Git checkout mới nhất cho workflow này.
+Để chơi client web, mở `http://127.0.0.1:5077/` bằng trình duyệt trên Windows. Client Unity riêng vẫn mở bằng Editor trong `game-client`. Container probe là bài kiểm thử mạng không giao diện. Dừng server bằng `docker compose down`. [Hướng dẫn Docker đầy đủ](docs/DOCKER.md), [kết quả Docker thực tế](reports/DOCKER-VALIDATION.md). Các ZIP cũ trong downloads là snapshot trước khi thêm Docker; dùng Git checkout mới nhất cho workflow này.

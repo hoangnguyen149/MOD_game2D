@@ -1,5 +1,9 @@
 # C — Cài đặt, chạy và đóng gói Windows 11 (v2)
 
+## Chơi mà không cài Unity Hub
+
+Có thêm [client web chạy cùng Docker](WEB-PLAY.md): mở http://127.0.0.1:5077/ sau khi cập nhật và build server. Đây là prototype Canvas độc lập; các giới hạn Unity và Windows GUI bên dưới vẫn áp dụng cho các client đó.
+
 ## Phương án và trạng thái
 
 Chỉ có game đã biên dịch nên dùng **phương án B**: prototype độc lập, procedural assets/audio tự tạo, mock server local. Có source thực tế cho client Unity, launcher Windows Forms, server và test harness. Chưa có Unity Editor/Windows trong phiên này để xác nhận toàn bộ MVP bằng giao diện; không gọi client Unity là “đã chạy”.

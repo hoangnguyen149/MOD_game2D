@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Owned Adventure — Chơi thử trên trình duyệt</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body data-theme="ocean">
+  <div class="shell">
+    <header class="topbar">
+      <a class="brand" href="/" aria-label="Owned Adventure"><span class="brand-mark">◈</span><span>OWNED<span class="brand-light"> ADVENTURE</span><small>LOCAL PLAYGROUND / 01</small></span></a>
+      <div class="top-note"><span class="live-dot"></span> Client web độc lập · tài nguyên tự tạo</div>
+    </header>
+    <main class="layout">
+      <section class="world-card" aria-label="Game thử nghiệm">
+        <div class="world-toolbar"><div><span class="eyebrow">BẢN ĐỒ THỬ NGHIỆM</span><h1>Đồng Cỏ Ánh Sáng<span class="map-tag">LOCAL</span></h1></div><button type="button" id="fullscreen-button" class="quiet-button" aria-label="Toàn màn hình bản đồ">⛶</button></div>
+        <div class="canvas-wrap" id="canvas-wrap">
+          <canvas id="game-canvas" tabindex="0" data-player-x="0" data-player-y="0" aria-label="Bản đồ game. Dùng WASD hoặc phím mũi tên để di chuyển, Space để dùng kỹ năng, Escape để tạm dừng."></canvas>
+          <div class="canvas-hud" id="canvas-hud" hidden>
+            <div class="portrait">✦</div><div class="vitals"><strong id="character-name">Nhân vật</strong><div class="meter-line"><span>HP</span><progress id="hp-meter" max="100" value="100"></progress><span id="hp-value">100</span></div><div class="meter-line mp"><span>MP</span><progress id="mp-meter" max="50" value="50"></progress><span id="mp-value">50</span></div></div>
+          </div>
+          <div class="world-badges"><span id="collect-badge" hidden>✦ <b id="collect-count">0</b> ánh sáng</span><span id="fps-display" hidden>FPS —</span></div>
+          <div class="world-message" id="world-message">Một cuộc phiêu lưu nhỏ đang chờ bạn.<small>Đăng nhập tài khoản demo để bắt đầu.</small></div>
+          <div class="pause-overlay" id="pause-overlay" hidden><span>Ⅱ</span><h2>Đang tạm dừng</h2><p>Nhấn Esc hoặc Tiếp tục để quay lại bản đồ.</p><button id="resume-overlay" type="button" class="primary-button">Tiếp tục</button></div>
+          <div class="touch-controls" id="touch-controls" hidden aria-label="Điều khiển cảm ứng"><div class="dpad"><button data-key="ArrowUp" aria-label="Đi lên">↑</button><button data-key="ArrowLeft" aria-label="Đi trái">←</button><button data-key="ArrowDown" aria-label="Đi xuống">↓</button><button data-key="ArrowRight" aria-label="Đi phải">→</button></div><button data-key="Space" class="touch-cast" aria-label="Dùng kỹ năng">✦</button></div>
+        </div>
+        <div class="world-footer"><span><i class="status-dot" id="connection-dot"></i><span id="connection-status" data-state="offline" role="status">Chưa đăng nhập</span></span><span id="coordinates">X 0.0 · Y 0.0</span></div>
+      </section>
+      <aside class="sidebar">
+        <section class="panel" id="login-panel">
+          <span class="eyebrow">BẮT ĐẦU CHƠI</span><h2>Chào nhà thám hiểm.</h2><p class="muted">Đăng nhập vào mock server đang chạy cùng Docker.</p>
+          <form id="login-form" autocomplete="off">
+            <label for="username">Tài khoản thử nghiệm</label><input id="username" name="username" value="demo" maxlength="40" autocomplete="off" spellcheck="false" required>
+            <label for="password">Mật khẩu</label><input id="password" name="password" type="password" maxlength="128" autocomplete="off" required placeholder="Nhập mật khẩu demo">
+            <label for="server-select">Máy chủ</label><select id="server-select" name="server" disabled><option>Đang tải máy chủ…</option></select>
+            <div id="fault-controls" hidden><label for="fault-select">Mô phỏng lỗi</label><select id="fault-select"><option value="none">Bình thường</option><option value="login-error">Từ chối đăng nhập</option><option value="timeout">Timeout khi đăng nhập</option><option value="disconnect">Ngắt khi gửi vị trí</option></select></div>
+            <button id="login-button" class="primary-button" type="submit" disabled>Vào bản đồ <span>↗</span></button>
+          </form>
+          <p id="login-message" class="feedback" role="status">Đang kiểm tra mock server…</p>
+          <div class="demo-card"><span>TÀI KHOẢN DEMO CÔNG KHAI</span><p><code>demo</code> hoặc <code>demo2</code><br>Mật khẩu: <code>local-demo-only</code></p><small>Mật khẩu và phiên đăng nhập chỉ giữ trong bộ nhớ.</small></div>
+          <button id="refresh-button" type="button" class="text-button">↻ Tải lại danh sách máy chủ</button>
+        </section>
+        <section class="panel" id="session-panel" hidden>
+          <span class="eyebrow">PHIÊN CHƠI LOCAL</span><h2 id="welcome-name">Nhà thám hiểm</h2><p class="muted">Dạo quanh đồng cỏ, nhặt những đốm sáng và thử kỹ năng.</p>
+          <div class="session-stat"><span>Ánh sáng đã nhặt</span><strong id="session-score">0</strong></div>
+          <button id="pause-button" type="button" class="primary-button">Ⅱ Tạm dừng</button><button id="logout-button" type="button" class="quiet-button wide">Đăng xuất</button>
+        </section>
+        <section class="panel settings-panel"><span class="eyebrow">ĐIỀU CHỈNH</span><h2>Góc chơi của bạn</h2><label class="toggle-row" for="show-fps"><span>Hiển thị FPS</span><input type="checkbox" id="show-fps" checked></label><label class="toggle-row" for="theme-select"><span>Giao diện HUD</span><select id="theme-select"><option value="ocean">Đại dương</option><option value="sunset">Hoàng hôn</option></select></label><label class="volume-label" for="volume">Âm lượng kỹ năng <output id="volume-value">35%</output></label><input type="range" id="volume" min="0" max="100" value="35"></section>
+        <section class="controls-card"><span class="eyebrow">CÁCH CHƠI</span><div><kbd>W A S D</kbd><span>Di chuyển · hoặc phím mũi tên</span></div><div><kbd>SPACE</kbd><span>Kỹ năng ánh sáng · tiêu hao 5 MP</span></div><div><kbd>ESC</kbd><span>Tạm dừng / tiếp tục</span></div><p>Nhặt đốm sáng để hồi MP. Bấm vào bản đồ để nhận điều khiển bàn phím.</p></section>
+      </aside>
+    </main>
+    <footer class="page-footer"><span>OWNED ADVENTURE · BROWSER PROTOTYPE</span><p>Mock server đồng bộ vị trí. Kỹ năng, vật phẩm và HP/MP là mô phỏng local. Đây là client web viết riêng, không phải bản build Unity hoặc game tham khảo.</p></footer>
+  </div>
+</body>
+</html>

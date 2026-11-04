@@ -2,7 +2,11 @@
 
 Các ZIP v2 là snapshot trước cập nhật Docker. Để dùng Docker, lấy checkout `main` mới nhất và xem [hướng dẫn Docker](../docs/DOCKER.md); không cần tải lại các gói Windows.
 
-## Phiên bản v2 hiện tại
+## Cập nhật chơi web trên Docker
+
+[Gói cập nhật web nhỏ](OwnedAdventure-web-update.zip): chép các thư mục `mock-server` và `docker` trong ZIP vào root dự án đang có `compose.yaml`, thay các file prototype tương ứng. Build lại bằng `docker compose up -d --build --wait mock-server`, sau đó mở http://127.0.0.1:5077/ bằng trình duyệt. Không cần Unity Hub cho client web độc lập. [Hướng dẫn web và kiểm thử](../docs/WEB-PLAY.md).
+
+## Các snapshot v2
 
 - [Source + báo cáo v2](OwnedAdventure-v2-source-reports.zip).
 - [Launcher Windows Forms v2 — self-contained Windows x64](OwnedAdventure-v2-Windows-Launcher.zip).

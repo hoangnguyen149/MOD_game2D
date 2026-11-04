@@ -1,0 +1,77 @@
+#1 [internal] load local bake definitions
+#1 reading from stdin 734B done
+#1 DONE 0.0s
+
+#2 [internal] load build definition from Dockerfile
+#2 transferring dockerfile: 1.46kB done
+#2 DONE 0.0s
+
+#3 [internal] load metadata for mcr.microsoft.com/dotnet/sdk:10.0.403
+#3 DONE 0.1s
+
+#4 [internal] load metadata for mcr.microsoft.com/dotnet/aspnet:10.0
+#4 DONE 0.1s
+
+#5 [internal] load .dockerignore
+#5 transferring context: 249B done
+#5 DONE 0.0s
+
+#6 [build  1/11] FROM mcr.microsoft.com/dotnet/sdk:10.0.403@sha256:de4fe90a98845d75910b9769662465c84de1a934665c431279d1382b2bddc02b
+#6 DONE 0.0s
+
+#7 [server 1/4] FROM mcr.microsoft.com/dotnet/aspnet:10.0@sha256:de0ee358cdd672f7017a003bed21e9ac9ed48a27c922a59b18175b6e82fa7fee
+#7 DONE 0.0s
+
+#8 [server 2/4] WORKDIR /app
+#8 CACHED
+
+#9 [internal] load build context
+#9 transferring context: 1.34kB done
+#9 DONE 0.0s
+
+#10 [build  3/11] COPY global.json Directory.Build.props ./
+#10 CACHED
+
+#11 [build  7/11] COPY game-client/Assets/Scripts/Network/ game-client/Assets/Scripts/Network/
+#11 CACHED
+
+#12 [build  9/11] COPY tests/ClientProbe/ tests/ClientProbe/
+#12 CACHED
+
+#13 [build  5/11] COPY shared/Core/ shared/Core/
+#13 CACHED
+
+#14 [build 10/11] COPY docker/HealthProbe/ docker/HealthProbe/
+#14 CACHED
+
+#15 [build  6/11] COPY game-client/Assets/Scripts/Core/ game-client/Assets/Scripts/Core/
+#15 CACHED
+
+#16 [build  8/11] COPY mock-server/ mock-server/
+#16 CACHED
+
+#17 [build  2/11] WORKDIR /src
+#17 CACHED
+
+#18 [build  4/11] COPY docker/NuGet.Config ./NuGet.Config
+#18 CACHED
+
+#19 [build 11/11] RUN --network=none dotnet publish mock-server/MockServer.csproj -c Release --self-contained false -p:UseAppHost=false -o /out/server  && dotnet publish tests/ClientProbe/ClientProbe.csproj -c Release --self-contained false -p:UseAppHost=false -o /out/probe  && dotnet publish docker/HealthProbe/HealthProbe.csproj -c Release --self-contained false -p:UseAppHost=false -o /out/health
+#19 CACHED
+
+#20 [server 3/4] COPY --from=build --chown=app:app /out/server/ ./
+#20 DONE 0.6s
+
+#21 [server 4/4] COPY --from=build --chown=app:app /out/health/ ./health/
+#21 DONE 0.2s
+
+#22 exporting to image
+#22 exporting layers
+#22 exporting layers 0.4s done
+#22 writing image sha256:6bfe8f46f4a5b63003688776443d7bf04cd2c04ffb8be1f3acc37e60608a3496 done
+#22 naming to docker.io/library/owned-web-check-mock-server done
+#22 DONE 0.4s
+
+#23 resolving provenance for metadata file
+#23 DONE 0.0s
+ owned-web-check-mock-server  Built
