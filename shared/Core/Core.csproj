@@ -1,0 +1,1 @@
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><TargetFramework>net10.0</TargetFramework><Nullable>disable</Nullable></PropertyGroup><ItemGroup><Compile Include="../../game-client/Assets/Scripts/Core/*.cs" Link="Core/%(Filename)%(Extension)" /><Compile Include="../../game-client/Assets/Scripts/Network/*.cs" Link="Network/%(Filename)%(Extension)" /></ItemGroup></Project>

@@ -1,0 +1,27 @@
+{
+  "metadata_magic": "0xfab11baf",
+  "metadata_version": 27,
+  "unity_versions": {
+    "Mod_Mabu6sao_Tv_Data/globalgamemanagers.assets": [
+      "2020.3.30f1"
+    ],
+    "Mod_Mabu6sao_Tv_Data/sharedassets0.assets": [
+      "2020.3.30f1"
+    ],
+    "Mod_Mabu6sao_Tv_Data/level0": [
+      "2020.3.30f1"
+    ],
+    "Mod_Mabu6sao_Tv_Data/resources.assets": [
+      "2020.3.30f1"
+    ],
+    "Mod_Mabu6sao_Tv_Data/globalgamemanagers": [
+      "2020.3.30f1"
+    ],
+    "Mod_Mabu6sao_Tv_Data/Resources/unity_builtin_extra": [
+      "2020.3.30f1"
+    ],
+    "Mod_Mabu6sao_Tv_Data/Resources/unity default resources": [
+      "2020.3.22f1"
+    ]
+  }
+}

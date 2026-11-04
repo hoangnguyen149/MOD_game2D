@@ -1,0 +1,75 @@
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  Core -> /workspace/MOD_game2D/shared/Core/bin/Release/net10.0/Core.dll
+  MockServer -> /workspace/MOD_game2D/mock-server/bin/Release/net10.0/MockServer.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.43
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  Launcher.Core -> /workspace/MOD_game2D/launcher/Core/bin/Release/net10.0/Launcher.Core.dll
+  Launcher -> /workspace/MOD_game2D/launcher/WinForms/bin/Release/net10.0-windows/Launcher.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:03.38
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  Core -> /workspace/MOD_game2D/shared/Core/bin/Release/net10.0/Core.dll
+  ClientProbe -> /workspace/MOD_game2D/tests/ClientProbe/bin/Release/net10.0/ClientProbe.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.38
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  Launcher.Core -> /workspace/MOD_game2D/launcher/Core/bin/Release/net10.0/Launcher.Core.dll
+  LauncherChecks -> /workspace/MOD_game2D/tests/LauncherChecks/bin/Release/net10.0/LauncherChecks.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.86
+  Determining projects to restore...
+  All projects are up-to-date for restore.
+  Core -> /workspace/MOD_game2D/shared/Core/bin/Release/net10.0/Core.dll
+  ApiChecks -> /workspace/MOD_game2D/tests/ApiChecks/bin/Release/net10.0/ApiChecks.dll
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:01.42
+PASS menu pauses movement
+PASS diagonal normalization
+PASS map bounds
+PASS HP clamp
+PASS negative damage rejected
+PASS cast spends MP 0
+PASS cast spends MP 1
+PASS cast spends MP 2
+PASS cast spends MP 3
+PASS cast spends MP 4
+PASS cast spends MP 5
+PASS cast spends MP 6
+PASS cast spends MP 7
+PASS cast spends MP 8
+PASS cast spends MP 9
+PASS insufficient MP
+PASS nonfinite input ignored
+PASS sample mod API
+PASS release excludes debug API
+19 checks passed
+PASS debug upper speed bound
+PASS debug lower speed bound
+PASS debug nonfinite speed rejected
+PASS debug restores HP and MP
+4 debug checks passed

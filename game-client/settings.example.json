@@ -1,0 +1,12 @@
+{
+  "volume": 0.7,
+  "width": 1024,
+  "height": 600,
+  "up": "W",
+  "down": "S",
+  "left": "A",
+  "right": "D",
+  "cast": "Space",
+  "theme": "ocean",
+  "fps": true
+}

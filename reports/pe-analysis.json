@@ -1,0 +1,3402 @@
+[
+  {
+    "path": "Auto Manager.exe",
+    "machine": "0x14c",
+    "pe_magic": "0x10b",
+    "image_base": "0x400000",
+    "entry_rva": "0x1180e",
+    "clr_header": true,
+    "versions": [
+      {
+        "FileVersion": "1.0.0.0",
+        "OriginalFilename": "QLTK_NR.exe",
+        "ProductName": "QLTK_NRB",
+        "ProductVersion": "1.0.0.0"
+      },
+      {
+        "FileVersion": "1.0.0.0",
+        "OriginalFilename": "QLTK_NR.exe",
+        "ProductName": "QLTK_NRB",
+        "ProductVersion": "1.0.0.0"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "rva": 8192,
+        "virtual_size": 63508,
+        "raw_size": 64000,
+        "entropy": 6.423,
+        "flags": "0x60000020"
+      },
+      {
+        "name": ".rsrc",
+        "rva": 73728,
+        "virtual_size": 4096,
+        "raw_size": 4096,
+        "entropy": 6.067,
+        "flags": "0x40000040"
+      },
+      {
+        "name": ".reloc",
+        "rva": 81920,
+        "virtual_size": 12,
+        "raw_size": 512,
+        "entropy": 0.098,
+        "flags": "0x42000040"
+      }
+    ],
+    "imports": [
+      {
+        "dll": "mscoree.dll",
+        "symbols": [
+          "_CorExeMain"
+        ]
+      }
+    ],
+    "exports": [],
+    "ascii_strings_count": 460,
+    "url_like_strings_count": 0,
+    "unity_versions": []
+  },
+  {
+    "path": "GameAssembly.dll",
+    "machine": "0x14c",
+    "pe_magic": "0x10b",
+    "image_base": "0x10000000",
+    "entry_rva": "0xf396f",
+    "clr_header": false,
+    "versions": [],
+    "sections": [
+      {
+        "name": ".text",
+        "rva": 4096,
+        "virtual_size": 1167622,
+        "raw_size": 1167872,
+        "entropy": 6.522,
+        "flags": "0x60000020"
+      },
+      {
+        "name": "il2cpp",
+        "rva": 1175552,
+        "virtual_size": 14668748,
+        "raw_size": 14668800,
+        "entropy": 6.576,
+        "flags": "0x60000020"
+      },
+      {
+        "name": ".rdata",
+        "rva": 15847424,
+        "virtual_size": 1495106,
+        "raw_size": 1495552,
+        "entropy": 5.142,
+        "flags": "0x40000040"
+      },
+      {
+        "name": ".data",
+        "rva": 17346560,
+        "virtual_size": 899272,
+        "raw_size": 377856,
+        "entropy": 5.348,
+        "flags": "0xc0000040"
+      },
+      {
+        "name": ".reloc",
+        "rva": 18247680,
+        "virtual_size": 1209816,
+        "raw_size": 1209856,
+        "entropy": 6.82,
+        "flags": "0x42000040"
+      }
+    ],
+    "imports": [
+      {
+        "dll": "KERNEL32.dll",
+        "symbols": [
+          "Sleep",
+          "GetCurrentProcess",
+          "CreateThread",
+          "GetCurrentThread",
+          "GetCurrentThreadId",
+          "GetExitCodeThread",
+          "SuspendThread",
+          "ResumeThread",
+          "GetThreadContext",
+          "GetSystemInfo",
+          "VirtualAlloc",
+          "VirtualFree",
+          "VirtualQuery",
+          "GetModuleFileNameW",
+          "GetModuleHandleW",
+          "GetProcAddress",
+          "GlobalAlloc",
+          "GlobalFree",
+          "RtlCaptureStackBackTrace",
+          "GetStdHandle",
+          "GetEnvironmentStringsW",
+          "FreeEnvironmentStringsW",
+          "SetEnvironmentVariableW",
+          "GetCurrentDirectoryW",
+          "CreateDirectoryW",
+          "DeleteFileW",
+          "FindClose",
+          "FindFirstFileExW",
+          "FindNextFileW",
+          "FlushFileBuffers",
+          "GetFileAttributesExW",
+          "GetFileSizeEx",
+          "GetFileType",
+          "GetFullPathNameW",
+          "ReadFile",
+          "RemoveDirectoryW",
+          "SetEndOfFile",
+          "SetFilePointerEx",
+          "IsDebuggerPresent",
+          "RaiseException",
+          "GetOverlappedResult",
+          "InitializeSRWLock",
+          "ReleaseSRWLockExclusive",
+          "ReleaseSRWLockShared",
+          "AcquireSRWLockExclusive",
+          "AcquireSRWLockShared",
+          "InitializeConditionVariable",
+          "WakeConditionVariable",
+          "WakeAllConditionVariable",
+          "SleepConditionVariableCS",
+          "SetEvent",
+          "ResetEvent",
+          "ReleaseSemaphore",
+          "ReleaseMutex",
+          "SleepEx",
+          "WaitForSingleObjectEx",
+          "WaitForMultipleObjectsEx",
+          "CreateMutexW",
+          "CreateEventW",
+          "CreateSemaphoreW",
+          "QueueUserAPC",
+          "GetCurrentProcessId",
+          "SwitchToThread",
+          "SetThreadPriority",
+          "LeaveCriticalSection",
+          "TlsAlloc",
+          "TlsGetValue",
+          "TlsSetValue",
+          "TlsFree",
+          "GetSystemTimes",
+          "GetSystemTimeAsFileTime",
+          "GetVersionExW",
+          "GetNativeSystemInfo",
+          "CreateFileMappingW",
+          "OpenFileMappingW",
+          "MapViewOfFile",
+          "UnmapViewOfFile",
+          "FreeLibrary",
+          "LoadLibraryW",
+          "FormatMessageW",
+          "GetComputerNameW",
+          "GetTimeZoneInformation",
+          "GetDynamicTimeZoneInformation",
+          "GetFileInformationByHandleEx",
+          "WideCharToMultiByte",
+          "GetACP",
+          "GetLocaleInfoW",
+          "GetThreadLocale",
+          "GetConsoleMode",
+          "GetProcessHeap",
+          "GetCommandLineW",
+          "GetCommandLineA",
+          "EnterCriticalSection",
+          "InitializeCriticalSection",
+          "QueryPerformanceFrequency",
+          "QueryPerformanceCounter",
+          "GetEnvironmentVariableW",
+          "SetStdHandle",
+          "GetOEMCP",
+          "IsValidCodePage",
+          "HeapQueryInformation",
+          "HeapSize",
+          "HeapReAlloc",
+          "EnumSystemLocalesW",
+          "GetUserDefaultLCID",
+          "IsValidLocale",
+          "LCMapStringW",
+          "CompareStringW",
+          "HeapFree",
+          "HeapAlloc",
+          "GetConsoleOutputCP",
+          "ReadConsoleW",
+          "GetModuleHandleExW",
+          "ExitProcess",
+          "LoadLibraryExW",
+          "InterlockedFlushSList",
+          "RtlUnwind",
+          "GetCPInfo",
+          "SetLastError",
+          "GetLastError",
+          "DuplicateHandle",
+          "CloseHandle",
+          "WriteFile",
+          "GetStringTypeW",
+          "LCMapStringEx",
+          "MultiByteToWideChar",
+          "DecodePointer",
+          "EncodePointer",
+          "InitializeCriticalSectionEx",
+          "TerminateProcess",
+          "InitializeSListHead",
+          "GetStartupInfoW",
+          "SetUnhandledExceptionFilter",
+          "UnhandledExceptionFilter",
+          "IsProcessorFeaturePresent",
+          "InitializeCriticalSectionAndSpinCount",
+          "DeleteCriticalSection",
+          "SetFilePointer",
+          "CreateFileW",
+          "GetThreadPriority",
+          "WriteConsoleW"
+        ]
+      },
+      {
+        "dll": "USER32.dll",
+        "symbols": [
+          "MessageBoxA"
+        ]
+      },
+      {
+        "dll": "ADVAPI32.dll",
+        "symbols": [
+          "CryptAcquireContextW",
+          "CryptReleaseContext",
+          "CryptGenRandom",
+          "GetUserNameW"
+        ]
+      },
+      {
+        "dll": "ole32.dll",
+        "symbols": [
+          "CoGetContextToken",
+          "CoInitializeEx",
+          "CoUninitialize",
+          "CoCreateFreeThreadedMarshaler",
+          "CoTaskMemFree",
+          "CoTaskMemAlloc"
+        ]
+      },
+      {
+        "dll": "OLEAUT32.dll",
+        "symbols": [
+          "SafeArrayUnaccessData",
+          "SafeArrayGetVartype",
+          "SafeArrayGetUBound",
+          "SafeArrayAccessData",
+          "SafeArrayDestroy",
+          "SafeArrayCreate",
+          "SysStringLen",
+          "SysFreeString",
+          "SafeArrayGetDim",
+          "SafeArrayGetLBound"
+        ]
+      },
+      {
+        "dll": "SHELL32.dll",
+        "symbols": [
+          "SHGetFolderPathW",
+          "SHGetKnownFolderPath"
+        ]
+      },
+      {
+        "dll": "WS2_32.dll",
+        "symbols": [
+          "select",
+          "send",
+          "freeaddrinfo",
+          "getaddrinfo",
+          "WSAPoll",
+          "WSASend",
+          "WSARecv",
+          "WSAIoctl",
+          "WSAGetLastError",
+          "recvfrom",
+          "ntohs",
+          "getnameinfo",
+          "listen",
+          "inet_ntoa",
+          "inet_addr",
+          "htons",
+          "htonl",
+          "getsockopt",
+          "getsockname",
+          "ioctlsocket",
+          "connect",
+          "closesocket",
+          "bind",
+          "accept",
+          "__WSAFDIsSet",
+          "setsockopt",
+          "inet_ntop",
+          "ntohl",
+          "WSACleanup",
+          "WSAStartup",
+          "gethostname",
+          "gethostbyaddr",
+          "socket",
+          "inet_pton",
+          "shutdown"
+        ]
+      },
+      {
+        "dll": "IPHLPAPI.DLL",
+        "symbols": [
+          "GetNetworkParams",
+          "GetAdaptersAddresses",
+          "GetIfEntry"
+        ]
+      },
+      {
+        "dll": "baselib.dll",
+        "symbols": [
+          "?Baselib_SystemSemaphore_Release@il2cpp_baselib@@YAXUBaselib_SystemSemaphore_Handle@1@I@Z",
+          "?Baselib_SystemSemaphore_Acquire@il2cpp_baselib@@YAXUBaselib_SystemSemaphore_Handle@1@@Z",
+          "?Baselib_SystemSemaphore_Create@il2cpp_baselib@@YA?AUBaselib_SystemSemaphore_Handle@1@XZ",
+          "?Baselib_SystemSemaphore_Free@il2cpp_baselib@@YAXUBaselib_SystemSemaphore_Handle@1@@Z",
+          "?Baselib_Thread_GetCurrentThreadId@il2cpp_baselib@@YAHXZ"
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "name": "CloseZStream",
+        "rva": 981888,
+        "ordinal": 3
+      },
+      {
+        "name": "CreateZStream",
+        "rva": 982032,
+        "ordinal": 4
+      },
+      {
+        "name": "DllCanUnloadNow",
+        "rva": 916976,
+        "ordinal": 1
+      },
+      {
+        "name": "DllGetActivationFactory",
+        "rva": 916992,
+        "ordinal": 2
+      },
+      {
+        "name": "Flush",
+        "rva": 982240,
+        "ordinal": 7
+      },
+      {
+        "name": "ReadZStream",
+        "rva": 982304,
+        "ordinal": 8
+      },
+      {
+        "name": "UnityPalGetLocalTimeZoneData",
+        "rva": 675984,
+        "ordinal": 9
+      },
+      {
+        "name": "UnityPalGetTimeZoneDataForID",
+        "rva": 676032,
+        "ordinal": 10
+      },
+      {
+        "name": "UnityPalTimeZoneInfoGetTimeZoneIDs",
+        "rva": 29392,
+        "ordinal": 11
+      },
+      {
+        "name": "UseUnityPalForTimeZoneInformation",
+        "rva": 29392,
+        "ordinal": 12
+      },
+      {
+        "name": "WriteZStream",
+        "rva": 982464,
+        "ordinal": 13
+      },
+      {
+        "name": "_DllCanUnloadNow@0",
+        "rva": 916976,
+        "ordinal": 5
+      },
+      {
+        "name": "_DllGetActivationFactory@8",
+        "rva": 916992,
+        "ordinal": 6
+      },
+      {
+        "name": "il2cpp_add_internal_call",
+        "rva": 31552,
+        "ordinal": 14
+      },
+      {
+        "name": "il2cpp_alloc",
+        "rva": 31568,
+        "ordinal": 15
+      },
+      {
+        "name": "il2cpp_allocation_granularity",
+        "rva": 31584,
+        "ordinal": 16
+      },
+      {
+        "name": "il2cpp_array_class_get",
+        "rva": 31600,
+        "ordinal": 17
+      },
+      {
+        "name": "il2cpp_array_element_size",
+        "rva": 31616,
+        "ordinal": 18
+      },
+      {
+        "name": "il2cpp_array_get_byte_length",
+        "rva": 31632,
+        "ordinal": 19
+      },
+      {
+        "name": "il2cpp_array_length",
+        "rva": 31648,
+        "ordinal": 20
+      },
+      {
+        "name": "il2cpp_array_new",
+        "rva": 31664,
+        "ordinal": 21
+      },
+      {
+        "name": "il2cpp_array_new_full",
+        "rva": 31680,
+        "ordinal": 22
+      },
+      {
+        "name": "il2cpp_array_new_specific",
+        "rva": 31696,
+        "ordinal": 23
+      },
+      {
+        "name": "il2cpp_array_object_header_size",
+        "rva": 31712,
+        "ordinal": 24
+      },
+      {
+        "name": "il2cpp_assembly_get_image",
+        "rva": 31728,
+        "ordinal": 25
+      },
+      {
+        "name": "il2cpp_bounded_array_class_get",
+        "rva": 31744,
+        "ordinal": 26
+      },
+      {
+        "name": "il2cpp_capture_memory_snapshot",
+        "rva": 31760,
+        "ordinal": 27
+      },
+      {
+        "name": "il2cpp_class_array_element_size",
+        "rva": 31776,
+        "ordinal": 28
+      },
+      {
+        "name": "il2cpp_class_enum_basetype",
+        "rva": 31792,
+        "ordinal": 29
+      },
+      {
+        "name": "il2cpp_class_for_each",
+        "rva": 31808,
+        "ordinal": 30
+      },
+      {
+        "name": "il2cpp_class_from_il2cpp_type",
+        "rva": 31824,
+        "ordinal": 31
+      },
+      {
+        "name": "il2cpp_class_from_name",
+        "rva": 31856,
+        "ordinal": 32
+      },
+      {
+        "name": "il2cpp_class_from_system_type",
+        "rva": 31872,
+        "ordinal": 33
+      },
+      {
+        "name": "il2cpp_class_from_type",
+        "rva": 31824,
+        "ordinal": 34
+      },
+      {
+        "name": "il2cpp_class_get_assemblyname",
+        "rva": 31888,
+        "ordinal": 35
+      },
+      {
+        "name": "il2cpp_class_get_bitmap",
+        "rva": 31904,
+        "ordinal": 36
+      },
+      {
+        "name": "il2cpp_class_get_bitmap_size",
+        "rva": 31952,
+        "ordinal": 37
+      },
+      {
+        "name": "il2cpp_class_get_data_size",
+        "rva": 31968,
+        "ordinal": 38
+      },
+      {
+        "name": "il2cpp_class_get_declaring_type",
+        "rva": 31984,
+        "ordinal": 39
+      },
+      {
+        "name": "il2cpp_class_get_element_class",
+        "rva": 32000,
+        "ordinal": 40
+      },
+      {
+        "name": "il2cpp_class_get_events",
+        "rva": 32016,
+        "ordinal": 41
+      },
+      {
+        "name": "il2cpp_class_get_field_from_name",
+        "rva": 32032,
+        "ordinal": 42
+      },
+      {
+        "name": "il2cpp_class_get_fields",
+        "rva": 32048,
+        "ordinal": 43
+      },
+      {
+        "name": "il2cpp_class_get_flags",
+        "rva": 32064,
+        "ordinal": 44
+      },
+      {
+        "name": "il2cpp_class_get_image",
+        "rva": 31728,
+        "ordinal": 45
+      },
+      {
+        "name": "il2cpp_class_get_interfaces",
+        "rva": 32080,
+        "ordinal": 46
+      },
+      {
+        "name": "il2cpp_class_get_method_from_name",
+        "rva": 32096,
+        "ordinal": 47
+      },
+      {
+        "name": "il2cpp_class_get_methods",
+        "rva": 32112,
+        "ordinal": 48
+      },
+      {
+        "name": "il2cpp_class_get_name",
+        "rva": 32128,
+        "ordinal": 49
+      },
+      {
+        "name": "il2cpp_class_get_namespace",
+        "rva": 31648,
+        "ordinal": 50
+      },
+      {
+        "name": "il2cpp_class_get_nested_types",
+        "rva": 32144,
+        "ordinal": 51
+      },
+      {
+        "name": "il2cpp_class_get_parent",
+        "rva": 32160,
+        "ordinal": 52
+      },
+      {
+        "name": "il2cpp_class_get_properties",
+        "rva": 32176,
+        "ordinal": 53
+      },
+      {
+        "name": "il2cpp_class_get_property_from_name",
+        "rva": 32192,
+        "ordinal": 54
+      },
+      {
+        "name": "il2cpp_class_get_rank",
+        "rva": 32208,
+        "ordinal": 55
+      },
+      {
+        "name": "il2cpp_class_get_static_field_data",
+        "rva": 32224,
+        "ordinal": 56
+      },
+      {
+        "name": "il2cpp_class_get_type",
+        "rva": 32240,
+        "ordinal": 57
+      },
+      {
+        "name": "il2cpp_class_get_type_token",
+        "rva": 32256,
+        "ordinal": 58
+      },
+      {
+        "name": "il2cpp_class_get_userdata_offset",
+        "rva": 32272,
+        "ordinal": 59
+      },
+      {
+        "name": "il2cpp_class_has_attribute",
+        "rva": 32288,
+        "ordinal": 60
+      },
+      {
+        "name": "il2cpp_class_has_parent",
+        "rva": 32304,
+        "ordinal": 61
+      },
+      {
+        "name": "il2cpp_class_has_references",
+        "rva": 32320,
+        "ordinal": 62
+      },
+      {
+        "name": "il2cpp_class_instance_size",
+        "rva": 32336,
+        "ordinal": 63
+      },
+      {
+        "name": "il2cpp_class_is_abstract",
+        "rva": 32352,
+        "ordinal": 64
+      },
+      {
+        "name": "il2cpp_class_is_assignable_from",
+        "rva": 32368,
+        "ordinal": 65
+      },
+      {
+        "name": "il2cpp_class_is_blittable",
+        "rva": 32384,
+        "ordinal": 66
+      },
+      {
+        "name": "il2cpp_class_is_enum",
+        "rva": 32400,
+        "ordinal": 67
+      },
+      {
+        "name": "il2cpp_class_is_generic",
+        "rva": 32416,
+        "ordinal": 68
+      },
+      {
+        "name": "il2cpp_class_is_inflated",
+        "rva": 32432,
+        "ordinal": 69
+      },
+      {
+        "name": "il2cpp_class_is_interface",
+        "rva": 32448,
+        "ordinal": 70
+      },
+      {
+        "name": "il2cpp_class_is_subclass_of",
+        "rva": 32464,
+        "ordinal": 71
+      },
+      {
+        "name": "il2cpp_class_is_valuetype",
+        "rva": 32480,
+        "ordinal": 72
+      },
+      {
+        "name": "il2cpp_class_num_fields",
+        "rva": 32496,
+        "ordinal": 73
+      },
+      {
+        "name": "il2cpp_class_set_userdata",
+        "rva": 32512,
+        "ordinal": 74
+      },
+      {
+        "name": "il2cpp_class_value_size",
+        "rva": 32528,
+        "ordinal": 75
+      },
+      {
+        "name": "il2cpp_current_thread_get_frame_at",
+        "rva": 32544,
+        "ordinal": 76
+      },
+      {
+        "name": "il2cpp_current_thread_get_stack_depth",
+        "rva": 32560,
+        "ordinal": 77
+      },
+      {
+        "name": "il2cpp_current_thread_get_top_frame",
+        "rva": 32576,
+        "ordinal": 78
+      },
+      {
+        "name": "il2cpp_current_thread_walk_frame_stack",
+        "rva": 32608,
+        "ordinal": 79
+      },
+      {
+        "name": "il2cpp_custom_attrs_construct",
+        "rva": 32624,
+        "ordinal": 80
+      },
+      {
+        "name": "il2cpp_custom_attrs_free",
+        "rva": 21504,
+        "ordinal": 81
+      },
+      {
+        "name": "il2cpp_custom_attrs_from_class",
+        "rva": 32640,
+        "ordinal": 82
+      },
+      {
+        "name": "il2cpp_custom_attrs_from_method",
+        "rva": 32672,
+        "ordinal": 83
+      },
+      {
+        "name": "il2cpp_custom_attrs_get_attr",
+        "rva": 32704,
+        "ordinal": 84
+      },
+      {
+        "name": "il2cpp_custom_attrs_has_attr",
+        "rva": 32720,
+        "ordinal": 85
+      },
+      {
+        "name": "il2cpp_debug_get_method_info",
+        "rva": 32736,
+        "ordinal": 86
+      },
+      {
+        "name": "il2cpp_debugger_set_agent_options",
+        "rva": 21504,
+        "ordinal": 87
+      },
+      {
+        "name": "il2cpp_domain_assembly_open",
+        "rva": 32752,
+        "ordinal": 88
+      },
+      {
+        "name": "il2cpp_domain_get",
+        "rva": 32768,
+        "ordinal": 89
+      },
+      {
+        "name": "il2cpp_domain_get_assemblies",
+        "rva": 32784,
+        "ordinal": 90
+      },
+      {
+        "name": "il2cpp_exception_from_name_msg",
+        "rva": 32816,
+        "ordinal": 91
+      },
+      {
+        "name": "il2cpp_field_get_flags",
+        "rva": 32832,
+        "ordinal": 92
+      },
+      {
+        "name": "il2cpp_field_get_name",
+        "rva": 31728,
+        "ordinal": 93
+      },
+      {
+        "name": "il2cpp_field_get_offset",
+        "rva": 31648,
+        "ordinal": 94
+      },
+      {
+        "name": "il2cpp_field_get_parent",
+        "rva": 32128,
+        "ordinal": 95
+      },
+      {
+        "name": "il2cpp_field_get_type",
+        "rva": 32848,
+        "ordinal": 96
+      },
+      {
+        "name": "il2cpp_field_get_value",
+        "rva": 32864,
+        "ordinal": 97
+      },
+      {
+        "name": "il2cpp_field_get_value_object",
+        "rva": 32880,
+        "ordinal": 98
+      },
+      {
+        "name": "il2cpp_field_has_attribute",
+        "rva": 32896,
+        "ordinal": 99
+      },
+      {
+        "name": "il2cpp_field_is_literal",
+        "rva": 32912,
+        "ordinal": 100
+      },
+      {
+        "name": "il2cpp_field_set_value",
+        "rva": 32944,
+        "ordinal": 101
+      },
+      {
+        "name": "il2cpp_field_set_value_object",
+        "rva": 32960,
+        "ordinal": 102
+      },
+      {
+        "name": "il2cpp_field_static_get_value",
+        "rva": 32976,
+        "ordinal": 103
+      },
+      {
+        "name": "il2cpp_field_static_set_value",
+        "rva": 32992,
+        "ordinal": 104
+      },
+      {
+        "name": "il2cpp_format_exception",
+        "rva": 33008,
+        "ordinal": 105
+      },
+      {
+        "name": "il2cpp_format_stack_trace",
+        "rva": 33104,
+        "ordinal": 106
+      },
+      {
+        "name": "il2cpp_free",
+        "rva": 33200,
+        "ordinal": 107
+      },
+      {
+        "name": "il2cpp_free_captured_memory_snapshot",
+        "rva": 33216,
+        "ordinal": 108
+      },
+      {
+        "name": "il2cpp_gc_collect",
+        "rva": 33232,
+        "ordinal": 109
+      },
+      {
+        "name": "il2cpp_gc_collect_a_little",
+        "rva": 33248,
+        "ordinal": 110
+      },
+      {
+        "name": "il2cpp_gc_disable",
+        "rva": 33264,
+        "ordinal": 111
+      },
+      {
+        "name": "il2cpp_gc_enable",
+        "rva": 33280,
+        "ordinal": 112
+      },
+      {
+        "name": "il2cpp_gc_foreach_heap",
+        "rva": 33296,
+        "ordinal": 113
+      },
+      {
+        "name": "il2cpp_gc_get_heap_size",
+        "rva": 33344,
+        "ordinal": 114
+      },
+      {
+        "name": "il2cpp_gc_get_max_time_slice_ns",
+        "rva": 33360,
+        "ordinal": 115
+      },
+      {
+        "name": "il2cpp_gc_get_used_size",
+        "rva": 33376,
+        "ordinal": 116
+      },
+      {
+        "name": "il2cpp_gc_has_strict_wbarriers",
+        "rva": 33392,
+        "ordinal": 117
+      },
+      {
+        "name": "il2cpp_gc_is_disabled",
+        "rva": 33408,
+        "ordinal": 118
+      },
+      {
+        "name": "il2cpp_gc_is_incremental",
+        "rva": 33424,
+        "ordinal": 119
+      },
+      {
+        "name": "il2cpp_gc_set_external_allocation_tracker",
+        "rva": 21504,
+        "ordinal": 120
+      },
+      {
+        "name": "il2cpp_gc_set_external_wbarrier_tracker",
+        "rva": 21504,
+        "ordinal": 121
+      },
+      {
+        "name": "il2cpp_gc_set_max_time_slice_ns",
+        "rva": 33440,
+        "ordinal": 122
+      },
+      {
+        "name": "il2cpp_gc_set_mode",
+        "rva": 33472,
+        "ordinal": 123
+      },
+      {
+        "name": "il2cpp_gc_start_incremental_collection",
+        "rva": 33488,
+        "ordinal": 124
+      },
+      {
+        "name": "il2cpp_gc_wbarrier_set_field",
+        "rva": 33504,
+        "ordinal": 125
+      },
+      {
+        "name": "il2cpp_gchandle_foreach_get_target",
+        "rva": 33536,
+        "ordinal": 126
+      },
+      {
+        "name": "il2cpp_gchandle_free",
+        "rva": 33584,
+        "ordinal": 127
+      },
+      {
+        "name": "il2cpp_gchandle_get_target",
+        "rva": 33600,
+        "ordinal": 128
+      },
+      {
+        "name": "il2cpp_gchandle_new",
+        "rva": 33616,
+        "ordinal": 129
+      },
+      {
+        "name": "il2cpp_gchandle_new_weakref",
+        "rva": 33632,
+        "ordinal": 130
+      },
+      {
+        "name": "il2cpp_get_corlib",
+        "rva": 33648,
+        "ordinal": 131
+      },
+      {
+        "name": "il2cpp_get_exception_argument_null",
+        "rva": 33664,
+        "ordinal": 132
+      },
+      {
+        "name": "il2cpp_image_get_assembly",
+        "rva": 32128,
+        "ordinal": 133
+      },
+      {
+        "name": "il2cpp_image_get_class",
+        "rva": 33680,
+        "ordinal": 134
+      },
+      {
+        "name": "il2cpp_image_get_class_count",
+        "rva": 31648,
+        "ordinal": 135
+      },
+      {
+        "name": "il2cpp_image_get_entry_point",
+        "rva": 33696,
+        "ordinal": 136
+      },
+      {
+        "name": "il2cpp_image_get_filename",
+        "rva": 31728,
+        "ordinal": 137
+      },
+      {
+        "name": "il2cpp_image_get_name",
+        "rva": 31728,
+        "ordinal": 138
+      },
+      {
+        "name": "il2cpp_init",
+        "rva": 33712,
+        "ordinal": 139
+      },
+      {
+        "name": "il2cpp_init_utf16",
+        "rva": 33744,
+        "ordinal": 140
+      },
+      {
+        "name": "il2cpp_is_debugger_attached",
+        "rva": 33856,
+        "ordinal": 141
+      },
+      {
+        "name": "il2cpp_is_vm_thread",
+        "rva": 33872,
+        "ordinal": 142
+      },
+      {
+        "name": "il2cpp_method_get_class",
+        "rva": 31648,
+        "ordinal": 143
+      },
+      {
+        "name": "il2cpp_method_get_declaring_type",
+        "rva": 31648,
+        "ordinal": 144
+      },
+      {
+        "name": "il2cpp_method_get_flags",
+        "rva": 33888,
+        "ordinal": 145
+      },
+      {
+        "name": "il2cpp_method_get_from_reflection",
+        "rva": 32128,
+        "ordinal": 146
+      },
+      {
+        "name": "il2cpp_method_get_name",
+        "rva": 32128,
+        "ordinal": 147
+      },
+      {
+        "name": "il2cpp_method_get_object",
+        "rva": 33936,
+        "ordinal": 148
+      },
+      {
+        "name": "il2cpp_method_get_param",
+        "rva": 33952,
+        "ordinal": 149
+      },
+      {
+        "name": "il2cpp_method_get_param_count",
+        "rva": 33968,
+        "ordinal": 150
+      },
+      {
+        "name": "il2cpp_method_get_param_name",
+        "rva": 33984,
+        "ordinal": 151
+      },
+      {
+        "name": "il2cpp_method_get_return_type",
+        "rva": 34000,
+        "ordinal": 152
+      },
+      {
+        "name": "il2cpp_method_get_token",
+        "rva": 32000,
+        "ordinal": 153
+      },
+      {
+        "name": "il2cpp_method_has_attribute",
+        "rva": 34016,
+        "ordinal": 154
+      },
+      {
+        "name": "il2cpp_method_is_generic",
+        "rva": 34032,
+        "ordinal": 155
+      },
+      {
+        "name": "il2cpp_method_is_inflated",
+        "rva": 34048,
+        "ordinal": 156
+      },
+      {
+        "name": "il2cpp_method_is_instance",
+        "rva": 34064,
+        "ordinal": 157
+      },
+      {
+        "name": "il2cpp_monitor_enter",
+        "rva": 34080,
+        "ordinal": 158
+      },
+      {
+        "name": "il2cpp_monitor_exit",
+        "rva": 34096,
+        "ordinal": 159
+      },
+      {
+        "name": "il2cpp_monitor_pulse",
+        "rva": 34112,
+        "ordinal": 160
+      },
+      {
+        "name": "il2cpp_monitor_pulse_all",
+        "rva": 34128,
+        "ordinal": 161
+      },
+      {
+        "name": "il2cpp_monitor_try_enter",
+        "rva": 34144,
+        "ordinal": 162
+      },
+      {
+        "name": "il2cpp_monitor_try_wait",
+        "rva": 34160,
+        "ordinal": 163
+      },
+      {
+        "name": "il2cpp_monitor_wait",
+        "rva": 34176,
+        "ordinal": 164
+      },
+      {
+        "name": "il2cpp_native_stack_trace",
+        "rva": 34192,
+        "ordinal": 165
+      },
+      {
+        "name": "il2cpp_object_get_class",
+        "rva": 31728,
+        "ordinal": 166
+      },
+      {
+        "name": "il2cpp_object_get_size",
+        "rva": 34352,
+        "ordinal": 167
+      },
+      {
+        "name": "il2cpp_object_get_virtual_method",
+        "rva": 34368,
+        "ordinal": 168
+      },
+      {
+        "name": "il2cpp_object_header_size",
+        "rva": 31584,
+        "ordinal": 169
+      },
+      {
+        "name": "il2cpp_object_new",
+        "rva": 34384,
+        "ordinal": 170
+      },
+      {
+        "name": "il2cpp_object_unbox",
+        "rva": 34480,
+        "ordinal": 171
+      },
+      {
+        "name": "il2cpp_offset_of_array_bounds_in_array_object_header",
+        "rva": 31584,
+        "ordinal": 172
+      },
+      {
+        "name": "il2cpp_offset_of_array_length_in_array_object_header",
+        "rva": 34496,
+        "ordinal": 173
+      },
+      {
+        "name": "il2cpp_override_stack_backtrace",
+        "rva": 34512,
+        "ordinal": 174
+      },
+      {
+        "name": "il2cpp_profiler_install",
+        "rva": 34528,
+        "ordinal": 175
+      },
+      {
+        "name": "il2cpp_profiler_install_allocation",
+        "rva": 34544,
+        "ordinal": 176
+      },
+      {
+        "name": "il2cpp_profiler_install_enter_leave",
+        "rva": 34560,
+        "ordinal": 177
+      },
+      {
+        "name": "il2cpp_profiler_install_fileio",
+        "rva": 34576,
+        "ordinal": 178
+      },
+      {
+        "name": "il2cpp_profiler_install_gc",
+        "rva": 34592,
+        "ordinal": 179
+      },
+      {
+        "name": "il2cpp_profiler_install_thread",
+        "rva": 34608,
+        "ordinal": 180
+      },
+      {
+        "name": "il2cpp_profiler_set_events",
+        "rva": 34624,
+        "ordinal": 181
+      },
+      {
+        "name": "il2cpp_property_get_flags",
+        "rva": 34000,
+        "ordinal": 182
+      },
+      {
+        "name": "il2cpp_property_get_get_method",
+        "rva": 32128,
+        "ordinal": 183
+      },
+      {
+        "name": "il2cpp_property_get_name",
+        "rva": 32848,
+        "ordinal": 184
+      },
+      {
+        "name": "il2cpp_property_get_parent",
+        "rva": 31728,
+        "ordinal": 185
+      },
+      {
+        "name": "il2cpp_property_get_set_method",
+        "rva": 31648,
+        "ordinal": 186
+      },
+      {
+        "name": "il2cpp_raise_exception",
+        "rva": 34640,
+        "ordinal": 187
+      },
+      {
+        "name": "il2cpp_register_debugger_agent_transport",
+        "rva": 21504,
+        "ordinal": 188
+      },
+      {
+        "name": "il2cpp_register_log_callback",
+        "rva": 34656,
+        "ordinal": 189
+      },
+      {
+        "name": "il2cpp_resolve_icall",
+        "rva": 34672,
+        "ordinal": 190
+      },
+      {
+        "name": "il2cpp_runtime_class_init",
+        "rva": 34688,
+        "ordinal": 191
+      },
+      {
+        "name": "il2cpp_runtime_invoke",
+        "rva": 34704,
+        "ordinal": 192
+      },
+      {
+        "name": "il2cpp_runtime_invoke_convert_args",
+        "rva": 34752,
+        "ordinal": 193
+      },
+      {
+        "name": "il2cpp_runtime_object_init",
+        "rva": 34800,
+        "ordinal": 194
+      },
+      {
+        "name": "il2cpp_runtime_object_init_exception",
+        "rva": 34816,
+        "ordinal": 195
+      },
+      {
+        "name": "il2cpp_runtime_unhandled_exception_policy_set",
+        "rva": 34832,
+        "ordinal": 196
+      },
+      {
+        "name": "il2cpp_set_commandline_arguments",
+        "rva": 34848,
+        "ordinal": 197
+      },
+      {
+        "name": "il2cpp_set_commandline_arguments_utf16",
+        "rva": 34880,
+        "ordinal": 198
+      },
+      {
+        "name": "il2cpp_set_config",
+        "rva": 34912,
+        "ordinal": 199
+      },
+      {
+        "name": "il2cpp_set_config_dir",
+        "rva": 34928,
+        "ordinal": 200
+      },
+      {
+        "name": "il2cpp_set_config_utf16",
+        "rva": 34944,
+        "ordinal": 201
+      },
+      {
+        "name": "il2cpp_set_data_dir",
+        "rva": 34960,
+        "ordinal": 202
+      },
+      {
+        "name": "il2cpp_set_default_thread_affinity",
+        "rva": 34976,
+        "ordinal": 203
+      },
+      {
+        "name": "il2cpp_set_find_plugin_callback",
+        "rva": 35008,
+        "ordinal": 204
+      },
+      {
+        "name": "il2cpp_set_memory_callbacks",
+        "rva": 35024,
+        "ordinal": 205
+      },
+      {
+        "name": "il2cpp_set_temp_dir",
+        "rva": 35040,
+        "ordinal": 206
+      },
+      {
+        "name": "il2cpp_shutdown",
+        "rva": 35056,
+        "ordinal": 207
+      },
+      {
+        "name": "il2cpp_start_gc_world",
+        "rva": 35072,
+        "ordinal": 208
+      },
+      {
+        "name": "il2cpp_stats_dump_to_file",
+        "rva": 35088,
+        "ordinal": 209
+      },
+      {
+        "name": "il2cpp_stats_get_value",
+        "rva": 35824,
+        "ordinal": 210
+      },
+      {
+        "name": "il2cpp_stop_gc_world",
+        "rva": 36096,
+        "ordinal": 211
+      },
+      {
+        "name": "il2cpp_string_chars",
+        "rva": 36112,
+        "ordinal": 212
+      },
+      {
+        "name": "il2cpp_string_intern",
+        "rva": 36128,
+        "ordinal": 213
+      },
+      {
+        "name": "il2cpp_string_is_interned",
+        "rva": 36144,
+        "ordinal": 214
+      },
+      {
+        "name": "il2cpp_string_length",
+        "rva": 32128,
+        "ordinal": 215
+      },
+      {
+        "name": "il2cpp_string_new",
+        "rva": 36160,
+        "ordinal": 216
+      },
+      {
+        "name": "il2cpp_string_new_len",
+        "rva": 36176,
+        "ordinal": 217
+      },
+      {
+        "name": "il2cpp_string_new_utf16",
+        "rva": 36192,
+        "ordinal": 218
+      },
+      {
+        "name": "il2cpp_string_new_wrapper",
+        "rva": 36208,
+        "ordinal": 219
+      },
+      {
+        "name": "il2cpp_thread_attach",
+        "rva": 36224,
+        "ordinal": 220
+      },
+      {
+        "name": "il2cpp_thread_current",
+        "rva": 36240,
+        "ordinal": 221
+      },
+      {
+        "name": "il2cpp_thread_detach",
+        "rva": 36256,
+        "ordinal": 222
+      },
+      {
+        "name": "il2cpp_thread_get_all_attached_threads",
+        "rva": 36272,
+        "ordinal": 223
+      },
+      {
+        "name": "il2cpp_thread_get_frame_at",
+        "rva": 36288,
+        "ordinal": 224
+      },
+      {
+        "name": "il2cpp_thread_get_stack_depth",
+        "rva": 36304,
+        "ordinal": 225
+      },
+      {
+        "name": "il2cpp_thread_get_top_frame",
+        "rva": 36320,
+        "ordinal": 226
+      },
+      {
+        "name": "il2cpp_thread_walk_frame_stack",
+        "rva": 36336,
+        "ordinal": 227
+      },
+      {
+        "name": "il2cpp_type_equals",
+        "rva": 36352,
+        "ordinal": 228
+      },
+      {
+        "name": "il2cpp_type_get_assembly_qualified_name",
+        "rva": 36368,
+        "ordinal": 229
+      },
+      {
+        "name": "il2cpp_type_get_attrs",
+        "rva": 36480,
+        "ordinal": 230
+      },
+      {
+        "name": "il2cpp_type_get_class_or_element_class",
+        "rva": 36496,
+        "ordinal": 231
+      },
+      {
+        "name": "il2cpp_type_get_name",
+        "rva": 36512,
+        "ordinal": 232
+      },
+      {
+        "name": "il2cpp_type_get_name_chunked",
+        "rva": 36624,
+        "ordinal": 233
+      },
+      {
+        "name": "il2cpp_type_get_object",
+        "rva": 36656,
+        "ordinal": 234
+      },
+      {
+        "name": "il2cpp_type_get_type",
+        "rva": 36672,
+        "ordinal": 235
+      },
+      {
+        "name": "il2cpp_type_is_byref",
+        "rva": 36688,
+        "ordinal": 236
+      },
+      {
+        "name": "il2cpp_type_is_pointer_type",
+        "rva": 36704,
+        "ordinal": 237
+      },
+      {
+        "name": "il2cpp_type_is_static",
+        "rva": 36720,
+        "ordinal": 238
+      },
+      {
+        "name": "il2cpp_unhandled_exception",
+        "rva": 36736,
+        "ordinal": 239
+      },
+      {
+        "name": "il2cpp_unity_install_unitytls_interface",
+        "rva": 36752,
+        "ordinal": 240
+      },
+      {
+        "name": "il2cpp_unity_liveness_calculation_begin",
+        "rva": 36768,
+        "ordinal": 241
+      },
+      {
+        "name": "il2cpp_unity_liveness_calculation_end",
+        "rva": 36784,
+        "ordinal": 242
+      },
+      {
+        "name": "il2cpp_unity_liveness_calculation_from_root",
+        "rva": 36800,
+        "ordinal": 243
+      },
+      {
+        "name": "il2cpp_unity_liveness_calculation_from_statics",
+        "rva": 36816,
+        "ordinal": 244
+      },
+      {
+        "name": "il2cpp_value_box",
+        "rva": 36832,
+        "ordinal": 245
+      }
+    ],
+    "ascii_strings_count": 56901,
+    "url_like_strings_count": 9,
+    "unity_versions": [
+      "2020.3.30f1"
+    ]
+  },
+  {
+    "path": "Mod_Mabu6sao_Tv.exe",
+    "machine": "0x14c",
+    "pe_magic": "0x10b",
+    "image_base": "0x400000",
+    "entry_rva": "0x125d",
+    "clr_header": false,
+    "versions": [
+      {
+        "FileVersion": "2020.3.30.2077119",
+        "ProductVersion": "2020.3.30.2077119"
+      },
+      {
+        "FileVersion": "2020.3.30.2077119",
+        "ProductVersion": "2020.3.30.2077119"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "rva": 4096,
+        "virtual_size": 44767,
+        "raw_size": 45056,
+        "entropy": 6.62,
+        "flags": "0x60000020"
+      },
+      {
+        "name": ".rdata",
+        "rva": 49152,
+        "virtual_size": 23150,
+        "raw_size": 23552,
+        "entropy": 4.804,
+        "flags": "0x40000040"
+      },
+      {
+        "name": ".data",
+        "rva": 73728,
+        "virtual_size": 5044,
+        "raw_size": 2560,
+        "entropy": 1.819,
+        "flags": "0xc0000040"
+      },
+      {
+        "name": ".rsrc",
+        "rva": 81920,
+        "virtual_size": 565576,
+        "raw_size": 565760,
+        "entropy": 1.34,
+        "flags": "0x40000040"
+      },
+      {
+        "name": ".reloc",
+        "rva": 651264,
+        "virtual_size": 3528,
+        "raw_size": 3584,
+        "entropy": 6.495,
+        "flags": "0x42000040"
+      }
+    ],
+    "imports": [
+      {
+        "dll": "UnityPlayer.dll",
+        "symbols": [
+          "UnityMain"
+        ]
+      },
+      {
+        "dll": "KERNEL32.dll",
+        "symbols": [
+          "HeapAlloc",
+          "WriteConsoleW",
+          "QueryPerformanceCounter",
+          "GetCurrentProcessId",
+          "GetCurrentThreadId",
+          "GetSystemTimeAsFileTime",
+          "InitializeSListHead",
+          "IsDebuggerPresent",
+          "UnhandledExceptionFilter",
+          "SetUnhandledExceptionFilter",
+          "GetStartupInfoW",
+          "IsProcessorFeaturePresent",
+          "GetModuleHandleW",
+          "GetCurrentProcess",
+          "TerminateProcess",
+          "CloseHandle",
+          "RtlUnwind",
+          "GetLastError",
+          "SetLastError",
+          "EnterCriticalSection",
+          "LeaveCriticalSection",
+          "DeleteCriticalSection",
+          "InitializeCriticalSectionAndSpinCount",
+          "TlsAlloc",
+          "TlsGetValue",
+          "TlsSetValue",
+          "TlsFree",
+          "FreeLibrary",
+          "GetProcAddress",
+          "LoadLibraryExW",
+          "RaiseException",
+          "GetStdHandle",
+          "WriteFile",
+          "GetModuleFileNameW",
+          "ExitProcess",
+          "GetModuleHandleExW",
+          "DecodePointer",
+          "HeapFree",
+          "FindClose",
+          "FindFirstFileExW",
+          "FindNextFileW",
+          "IsValidCodePage",
+          "GetACP",
+          "GetOEMCP",
+          "GetCPInfo",
+          "GetCommandLineA",
+          "GetCommandLineW",
+          "MultiByteToWideChar",
+          "WideCharToMultiByte",
+          "GetEnvironmentStringsW",
+          "FreeEnvironmentStringsW",
+          "SetStdHandle",
+          "GetFileType",
+          "GetStringTypeW",
+          "LCMapStringW",
+          "GetProcessHeap",
+          "HeapSize",
+          "HeapReAlloc",
+          "FlushFileBuffers",
+          "GetConsoleCP",
+          "GetConsoleMode",
+          "SetFilePointerEx",
+          "CreateFileW"
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "name": "AmdPowerXpressRequestHighPerformance",
+        "rva": 73732,
+        "ordinal": 1
+      },
+      {
+        "name": "NvOptimusEnablement",
+        "rva": 73728,
+        "ordinal": 2
+      }
+    ],
+    "ascii_strings_count": 412,
+    "url_like_strings_count": 2,
+    "unity_versions": []
+  },
+  {
+    "path": "UnityCrashHandler32.exe",
+    "machine": "0x14c",
+    "pe_magic": "0x10b",
+    "image_base": "0x400000",
+    "entry_rva": "0x332da",
+    "clr_header": false,
+    "versions": [],
+    "sections": [
+      {
+        "name": ".text",
+        "rva": 4096,
+        "virtual_size": 431924,
+        "raw_size": 432128,
+        "entropy": 6.665,
+        "flags": "0x60000020"
+      },
+      {
+        "name": ".rdata",
+        "rva": 438272,
+        "virtual_size": 110024,
+        "raw_size": 110080,
+        "entropy": 5.846,
+        "flags": "0x40000040"
+      },
+      {
+        "name": ".data",
+        "rva": 548864,
+        "virtual_size": 16516,
+        "raw_size": 9216,
+        "entropy": 4.06,
+        "flags": "0xc0000040"
+      },
+      {
+        "name": ".rsrc",
+        "rva": 569344,
+        "virtual_size": 483312,
+        "raw_size": 483328,
+        "entropy": 3.093,
+        "flags": "0x40000040"
+      },
+      {
+        "name": ".reloc",
+        "rva": 1052672,
+        "virtual_size": 19380,
+        "raw_size": 19456,
+        "entropy": 6.618,
+        "flags": "0x42000040"
+      }
+    ],
+    "imports": [
+      {
+        "dll": "USER32.dll",
+        "symbols": [
+          "EndDialog",
+          "GetDlgItem",
+          "SendDlgItemMessageA",
+          "SetWindowTextW",
+          "AdjustWindowRect",
+          "SendMessageW",
+          "DialogBoxParamA",
+          "SetWindowPos",
+          "OffsetRect",
+          "UnionRect",
+          "SetForegroundWindow",
+          "InflateRect",
+          "GetWindowLongA",
+          "GetIconInfo",
+          "LoadImageA",
+          "CreateIconFromResourceEx",
+          "LookupIconIdFromDirectoryEx"
+        ]
+      },
+      {
+        "dll": "KERNEL32.dll",
+        "symbols": [
+          "DuplicateHandle",
+          "VirtualProtect",
+          "GetVersionExW",
+          "UnregisterWait",
+          "RegisterWaitForSingleObject",
+          "SetThreadAffinityMask",
+          "GetProcessAffinityMask",
+          "GetNumaHighestNodeNumber",
+          "DeleteTimerQueueTimer",
+          "ChangeTimerQueueTimer",
+          "CreateTimerQueueTimer",
+          "GetLogicalProcessorInformation",
+          "SignalObjectAndWait",
+          "CreateTimerQueue",
+          "WriteConsoleW",
+          "GetProcessHeap",
+          "FreeEnvironmentStringsW",
+          "GetEnvironmentStringsW",
+          "GetCommandLineA",
+          "GetOEMCP",
+          "GetACP",
+          "IsValidCodePage",
+          "HeapQueryInformation",
+          "HeapSize",
+          "HeapReAlloc",
+          "EnumSystemLocalesW",
+          "GetUserDefaultLCID",
+          "IsValidLocale",
+          "HeapFree",
+          "HeapAlloc",
+          "FreeLibraryAndExitThread",
+          "GetConsoleCP",
+          "GetConsoleMode",
+          "SetConsoleCtrlHandler",
+          "GetFileType",
+          "SetStdHandle",
+          "GetModuleHandleExW",
+          "ExitProcess",
+          "InterlockedFlushSList",
+          "InterlockedPushEntrySList",
+          "WaitForSingleObjectEx",
+          "CloseHandle",
+          "RaiseException",
+          "GetLastError",
+          "GetCurrentThread",
+          "OpenThread",
+          "GetThreadTimes",
+          "EnterCriticalSection",
+          "LeaveCriticalSection",
+          "InitializeCriticalSectionAndSpinCount",
+          "TryEnterCriticalSection",
+          "DeleteCriticalSection",
+          "SwitchToThread",
+          "CreateThread",
+          "GetCurrentThreadId",
+          "SetThreadPriority",
+          "GetThreadPriority",
+          "FreeLibrary",
+          "GetModuleFileNameA",
+          "GetModuleFileNameW",
+          "GetProcAddress",
+          "LoadLibraryA",
+          "LoadLibraryW",
+          "MultiByteToWideChar",
+          "WideCharToMultiByte",
+          "GetCurrentProcess",
+          "SuspendThread",
+          "ResumeThread",
+          "TlsGetValue",
+          "TlsSetValue",
+          "GetThreadContext",
+          "SetLastError",
+          "CreateEventW",
+          "CreateFileW",
+          "DeleteFileW",
+          "FindClose",
+          "FindFirstFileW",
+          "FindFirstFileExW",
+          "FindNextFileW",
+          "InterlockedPopEntrySList",
+          "GetFileAttributesA",
+          "GetFileAttributesW",
+          "ReadFile",
+          "SetFilePointerEx",
+          "WriteFile",
+          "GetEnvironmentVariableA",
+          "GetCurrentDirectoryA",
+          "OutputDebugStringA",
+          "GetSystemTime",
+          "ReadProcessMemory",
+          "VerSetConditionMask",
+          "GetSystemTimeAsFileTime",
+          "GetCurrentProcessId",
+          "GetModuleHandleW",
+          "WaitForSingleObject",
+          "LocalFree",
+          "FormatMessageW",
+          "VerifyVersionInfoW",
+          "CreateToolhelp32Snapshot",
+          "Thread32First",
+          "Thread32Next",
+          "GetStdHandle",
+          "GetFileSize",
+          "GetTempPathW",
+          "SetEvent",
+          "Sleep",
+          "TerminateProcess",
+          "GetExitCodeProcess",
+          "CreateProcessW",
+          "GetProcessId",
+          "GetThreadId",
+          "OpenProcess",
+          "CopyFileExW",
+          "AllocConsole",
+          "SetErrorMode",
+          "GetCommandLineW",
+          "InitializeCriticalSection",
+          "CreateEventA",
+          "TerminateThread",
+          "GetExitCodeThread",
+          "GetModuleHandleA",
+          "LoadLibraryExW",
+          "LoadResource",
+          "LockResource",
+          "SizeofResource",
+          "FindResourceA",
+          "EnumResourceNamesA",
+          "GetFileSizeEx",
+          "IsDebuggerPresent",
+          "QueryPerformanceCounter",
+          "QueryPerformanceFrequency",
+          "ReleaseSemaphore",
+          "TlsAlloc",
+          "TlsFree",
+          "VirtualAlloc",
+          "VirtualFree",
+          "VirtualQuery",
+          "RtlUnwind",
+          "GetLocaleInfoW",
+          "LCMapStringW",
+          "CompareStringW",
+          "GetCPInfo",
+          "DecodePointer",
+          "EncodePointer",
+          "GetTickCount",
+          "GetStringTypeW",
+          "InitializeSListHead",
+          "GetStartupInfoW",
+          "SetUnhandledExceptionFilter",
+          "UnhandledExceptionFilter",
+          "IsProcessorFeaturePresent",
+          "QueryDepthSList",
+          "UnregisterWaitEx",
+          "ResetEvent",
+          "FlushFileBuffers",
+          "WaitForMultipleObjectsEx"
+        ]
+      },
+      {
+        "dll": "SHELL32.dll",
+        "symbols": [
+          "SHCreateDirectoryExW",
+          "CommandLineToArgvW"
+        ]
+      },
+      {
+        "dll": "ole32.dll",
+        "symbols": [
+          "CoInitializeEx",
+          "CoTaskMemFree",
+          "CoCreateGuid"
+        ]
+      },
+      {
+        "dll": "PSAPI.DLL",
+        "symbols": [
+          "GetModuleFileNameExW"
+        ]
+      },
+      {
+        "dll": "ADVAPI32.dll",
+        "symbols": [
+          "GetUserNameA"
+        ]
+      },
+      {
+        "dll": "WININET.dll",
+        "symbols": [
+          "InternetOpenA",
+          "InternetCloseHandle",
+          "HttpQueryInfoA",
+          "HttpSendRequestA",
+          "HttpOpenRequestA",
+          "InternetConnectA",
+          "InternetCrackUrlA"
+        ]
+      },
+      {
+        "dll": "GDI32.dll",
+        "symbols": [
+          "GetObjectA"
+        ]
+      },
+      {
+        "dll": "VERSION.dll",
+        "symbols": [
+          "GetFileVersionInfoSizeA",
+          "VerQueryValueA",
+          "GetFileVersionInfoA"
+        ]
+      }
+    ],
+    "exports": [],
+    "ascii_strings_count": 2615,
+    "url_like_strings_count": 23,
+    "unity_versions": []
+  },
+  {
+    "path": "UnityPlayer.dll",
+    "machine": "0x14c",
+    "pe_magic": "0x10b",
+    "image_base": "0x10000000",
+    "entry_rva": "0x11897c0",
+    "clr_header": false,
+    "versions": [
+      {
+        "FileVersion": "2020.3.30.2077119",
+        "ProductVersion": "2020.3.30.2077119"
+      },
+      {
+        "FileVersion": "2020.3.30.2077119",
+        "ProductVersion": "2020.3.30.2077119"
+      }
+    ],
+    "sections": [
+      {
+        "name": ".text",
+        "rva": 4096,
+        "virtual_size": 18763527,
+        "raw_size": 18763776,
+        "entropy": 6.647,
+        "flags": "0x60000020"
+      },
+      {
+        "name": ".rdata",
+        "rva": 18767872,
+        "virtual_size": 2221518,
+        "raw_size": 2221568,
+        "entropy": 6.075,
+        "flags": "0x40000040"
+      },
+      {
+        "name": ".data",
+        "rva": 20992000,
+        "virtual_size": 970940,
+        "raw_size": 265216,
+        "entropy": 5.173,
+        "flags": "0xc0000040"
+      },
+      {
+        "name": ".rodata",
+        "rva": 21966848,
+        "virtual_size": 2816,
+        "raw_size": 3072,
+        "entropy": 3.997,
+        "flags": "0x40000040"
+      },
+      {
+        "name": "_RDATA",
+        "rva": 21970944,
+        "virtual_size": 105952,
+        "raw_size": 105984,
+        "entropy": 6.92,
+        "flags": "0x40000040"
+      },
+      {
+        "name": ".rsrc",
+        "rva": 22077440,
+        "virtual_size": 2192,
+        "raw_size": 2560,
+        "entropy": 2.936,
+        "flags": "0x40000040"
+      },
+      {
+        "name": ".reloc",
+        "rva": 22081536,
+        "virtual_size": 652472,
+        "raw_size": 652800,
+        "entropy": 6.752,
+        "flags": "0x42000040"
+      }
+    ],
+    "imports": [
+      {
+        "dll": "KERNEL32.dll",
+        "symbols": [
+          "FindFirstFileW",
+          "FindFirstFileExW",
+          "FindNextFileW",
+          "GetDiskFreeSpaceExW",
+          "GetFileAttributesExW",
+          "GetFullPathNameW",
+          "ReadFile",
+          "RemoveDirectoryW",
+          "SetEndOfFile",
+          "SetFileAttributesW",
+          "SetFilePointer",
+          "SetFilePointerEx",
+          "SetFileTime",
+          "GetCurrentThreadId",
+          "OpenThread",
+          "SuspendThread",
+          "ResumeThread",
+          "LocalFree",
+          "FormatMessageW",
+          "CopyFileW",
+          "MoveFileExW",
+          "ReplaceFileW",
+          "SystemTimeToFileTime",
+          "Thread32First",
+          "Thread32Next",
+          "CreateMutexA",
+          "RtlCaptureContext",
+          "GetEnvironmentVariableA",
+          "GetCurrentDirectoryA",
+          "GetCurrentDirectoryW",
+          "GetFileAttributesA",
+          "DebugBreak",
+          "SetUnhandledExceptionFilter",
+          "SetLastError",
+          "GetErrorMode",
+          "TerminateProcess",
+          "CreateThread",
+          "GetThreadContext",
+          "ReadProcessMemory",
+          "GetModuleFileNameA",
+          "LocalAlloc",
+          "GetOverlappedResult",
+          "CancelIo",
+          "ResetEvent",
+          "GetStartupInfoA",
+          "SetConsoleCtrlHandler",
+          "SetDllDirectoryW",
+          "SleepEx",
+          "SetWaitableTimer",
+          "CreateWaitableTimerExW",
+          "RaiseException",
+          "GetThreadTimes",
+          "SwitchToThread",
+          "SetThreadPriority",
+          "GetThreadPriority",
+          "InitializeCriticalSection",
+          "EnterCriticalSection",
+          "LeaveCriticalSection",
+          "DeleteCriticalSection",
+          "FormatMessageA",
+          "GetWindowsDirectoryW",
+          "CreateIoCompletionPort",
+          "GetQueuedCompletionStatus",
+          "AttachConsole",
+          "InitializeCriticalSectionAndSpinCount",
+          "TryEnterCriticalSection",
+          "ReleaseSemaphore",
+          "GetSystemInfo",
+          "GetLocalTime",
+          "GetTimeZoneInformation",
+          "GetFileSizeEx",
+          "IsDebuggerPresent",
+          "CreateSemaphoreExW",
+          "TlsAlloc",
+          "TlsFree",
+          "GetNativeSystemInfo",
+          "SetErrorMode",
+          "GetFileSize",
+          "HeapSize",
+          "HeapReAlloc",
+          "DeleteProcThreadAttributeList",
+          "ExitProcess",
+          "RtlUnwind",
+          "UnregisterWaitEx",
+          "QueryDepthSList",
+          "DuplicateHandle",
+          "GetSystemTimeAsFileTime",
+          "FreeLibraryAndExitThread",
+          "UnregisterWait",
+          "RegisterWaitForSingleObject",
+          "GetProcessAffinityMask",
+          "GetNumaHighestNodeNumber",
+          "CreateFileW",
+          "ChangeTimerQueueTimer",
+          "CreateTimerQueueTimer",
+          "GetLogicalProcessorInformation",
+          "SignalObjectAndWait",
+          "CreateTimerQueue",
+          "GetStartupInfoW",
+          "UnhandledExceptionFilter",
+          "IsProcessorFeaturePresent",
+          "GetCPInfo",
+          "GetStringTypeW",
+          "GetLocaleInfoW",
+          "LCMapStringW",
+          "CompareStringW",
+          "DecodePointer",
+          "EncodePointer",
+          "GetSystemDirectoryW",
+          "InitializeCriticalSectionEx",
+          "GlobalMemoryStatus",
+          "GetTickCount",
+          "GetFileType",
+          "InterlockedFlushSList",
+          "InterlockedPushEntrySList",
+          "InterlockedPopEntrySList",
+          "InitializeSListHead",
+          "ExitThread",
+          "CreateWaitableTimerA",
+          "OpenEventA",
+          "ReadConsoleInputW",
+          "FlushConsoleInputBuffer",
+          "SetThreadAffinityMask",
+          "GetStdHandle",
+          "GetConsoleCP",
+          "GetConsoleMode",
+          "ReadConsoleW",
+          "GetDriveTypeW",
+          "GetFileInformationByHandle",
+          "PeekNamedPipe",
+          "SystemTimeToTzSpecificLocalTime",
+          "FileTimeToSystemTime",
+          "HeapFree",
+          "HeapAlloc",
+          "GetDateFormatW",
+          "GetTimeFormatW",
+          "IsValidLocale",
+          "GetUserDefaultLCID",
+          "EnumSystemLocalesW",
+          "GetProcessHeap",
+          "SetStdHandle",
+          "SetConsoleMode",
+          "IsValidCodePage",
+          "GetACP",
+          "GetOEMCP",
+          "GetCommandLineA",
+          "GetEnvironmentStringsW",
+          "FreeEnvironmentStringsW",
+          "SetEnvironmentVariableW",
+          "WriteConsoleW",
+          "LoadLibraryExW",
+          "GetCurrentThread",
+          "GetCurrentProcess",
+          "GetModuleHandleA",
+          "CreateEventExW",
+          "WaitForMultipleObjectsEx",
+          "QueryPerformanceFrequency",
+          "HeapQueryInformation",
+          "InitializeProcThreadAttributeList",
+          "GetProcessId",
+          "CreateProcessW",
+          "GetExitCodeProcess",
+          "WaitForMultipleObjects",
+          "CreateEventW",
+          "CreatePipe",
+          "SetHandleInformation",
+          "OutputDebugStringA",
+          "GetTempPathW",
+          "WriteFile",
+          "GetSystemTime",
+          "GlobalLock",
+          "GlobalUnlock",
+          "GlobalAlloc",
+          "GetTempFileNameW",
+          "GetFileAttributesW",
+          "DeleteFileW",
+          "CreateToolhelp32Snapshot",
+          "K32GetProcessMemoryInfo",
+          "MultiByteToWideChar",
+          "GetUserDefaultLocaleName",
+          "GetSystemPowerStatus",
+          "FindClose",
+          "CreateDirectoryW",
+          "DeleteTimerQueueTimer",
+          "FlushFileBuffers",
+          "CreateFileA",
+          "ExpandEnvironmentStringsW",
+          "GetComputerNameW",
+          "LoadLibraryW",
+          "GetModuleHandleW",
+          "GetModuleFileNameW",
+          "VirtualFree",
+          "VirtualProtect",
+          "VirtualAlloc",
+          "GetVersionExW",
+          "UpdateProcThreadAttribute",
+          "GetCommandLineW",
+          "GetLogicalProcessorInformationEx",
+          "GetSystemDirectoryA",
+          "GetModuleHandleExW",
+          "GlobalMemoryStatusEx",
+          "QueryPerformanceCounter",
+          "GetLastError",
+          "WaitForSingleObject",
+          "Sleep",
+          "CreateEventA",
+          "WaitForSingleObjectEx",
+          "SetEvent",
+          "CloseHandle",
+          "VerifyVersionInfoW",
+          "VerSetConditionMask",
+          "WideCharToMultiByte",
+          "LoadLibraryA",
+          "GetProcAddress",
+          "FreeLibrary",
+          "GetCurrentProcessId",
+          "TlsSetValue",
+          "VirtualQuery",
+          "TlsGetValue"
+        ]
+      },
+      {
+        "dll": "USER32.dll",
+        "symbols": [
+          "GetDoubleClickTime",
+          "EnumDisplaySettingsA",
+          "GetCaretBlinkTime",
+          "DestroyWindow",
+          "CreateWindowExW",
+          "ShowWindow",
+          "UpdateWindow",
+          "PeekMessageA",
+          "MsgWaitForMultipleObjects",
+          "GetClientRect",
+          "GetWindowRect",
+          "GetDisplayConfigBufferSizes",
+          "QueryDisplayConfig",
+          "DisplayConfigGetDeviceInfo",
+          "GetDesktopWindow",
+          "EnumDisplayDevicesA",
+          "MonitorFromWindow",
+          "ReleaseDC",
+          "AllowSetForegroundWindow",
+          "TrackMouseEvent",
+          "OpenClipboard",
+          "CloseClipboard",
+          "SetClipboardData",
+          "GetClipboardData",
+          "EmptyClipboard",
+          "IsClipboardFormatAvailable",
+          "SetCursor",
+          "EnumDisplaySettingsW",
+          "LoadIconW",
+          "AdjustWindowRectEx",
+          "GetWindowPlacement",
+          "GetDC",
+          "EnumDisplayMonitors",
+          "GetMonitorInfoW",
+          "GetMonitorInfoA",
+          "MonitorFromRect",
+          "SetWindowLongW",
+          "SetWindowLongA",
+          "GetWindowLongW",
+          "ClipCursor",
+          "ShowCursor",
+          "SetWindowTextW",
+          "ValidateRect",
+          "LoadCursorA",
+          "DestroyCursor",
+          "DestroyIcon",
+          "LoadImageW",
+          "GetThreadDesktop",
+          "DragDetect",
+          "KillTimer",
+          "SetTimer",
+          "GetFocus",
+          "PostQuitMessage",
+          "DefWindowProcW",
+          "SendMessageW",
+          "GetMessageA",
+          "GetRawInputDeviceList",
+          "RegisterRawInputDevices",
+          "GetRawInputDeviceInfoW",
+          "GetRawInputData",
+          "GetUserObjectInformationW",
+          "GetProcessWindowStation",
+          "SystemParametersInfoW",
+          "GetWindowLongA",
+          "PtInRect",
+          "ScreenToClient",
+          "ClientToScreen",
+          "GetCursorPos",
+          "SetCursorPos",
+          "GetSystemMetrics",
+          "ReleaseCapture",
+          "SetCapture",
+          "MapVirtualKeyW",
+          "MapVirtualKeyA",
+          "ToUnicode",
+          "GetKeyNameTextW",
+          "GetAsyncKeyState",
+          "GetKeyState",
+          "GetActiveWindow",
+          "SetFocus",
+          "IsWindowVisible",
+          "UnregisterDeviceNotification",
+          "RegisterDeviceNotificationW",
+          "GetMessageExtraInfo",
+          "GetMessagePos",
+          "DispatchMessageA",
+          "TranslateMessage",
+          "GetKeyboardLayoutNameW",
+          "LoadIconA",
+          "GetParent",
+          "OffsetRect",
+          "CopyRect",
+          "MessageBoxA",
+          "SendDlgItemMessageW",
+          "SetDlgItemTextW",
+          "SetDlgItemTextA",
+          "EndDialog",
+          "DialogBoxParamW",
+          "SetWindowPos",
+          "RegisterClassExW",
+          "UnregisterClassW",
+          "EnumWindows",
+          "SetForegroundWindow",
+          "IsIconic",
+          "SendMessageTimeoutA",
+          "RegisterWindowMessageA",
+          "GetUserObjectInformationA",
+          "RegisterClassW"
+        ]
+      },
+      {
+        "dll": "VERSION.dll",
+        "symbols": [
+          "GetFileVersionInfoA",
+          "VerQueryValueA",
+          "GetFileVersionInfoSizeA"
+        ]
+      },
+      {
+        "dll": "ole32.dll",
+        "symbols": [
+          "CoTaskMemAlloc",
+          "PropVariantClear",
+          "PropVariantCopy",
+          "CoCreateFreeThreadedMarshaler",
+          "CoCreateGuid",
+          "StringFromGUID2",
+          "CoSetProxyBlanket",
+          "CoUninitialize",
+          "CoCreateInstance",
+          "CoTaskMemFree",
+          "CoInitialize"
+        ]
+      },
+      {
+        "dll": "SHLWAPI.dll",
+        "symbols": [
+          "SHDeleteKeyW",
+          "PathCanonicalizeW"
+        ]
+      },
+      {
+        "dll": "SETUPAPI.dll",
+        "symbols": [
+          "SetupDiEnumDeviceInfo",
+          "SetupDiDestroyDeviceInfoList",
+          "SetupDiGetDeviceInterfaceDetailW",
+          "SetupDiGetClassDevsA",
+          "SetupDiEnumDeviceInterfaces"
+        ]
+      },
+      {
+        "dll": "ADVAPI32.dll",
+        "symbols": [
+          "CryptAcquireContextA",
+          "RegQueryValueExA",
+          "RegDeleteValueA",
+          "RegCreateKeyW",
+          "GetUserNameA",
+          "GetTokenInformation",
+          "GetSidSubAuthority",
+          "OpenProcessToken",
+          "RegSetValueExW",
+          "RegCreateKeyExW",
+          "RegCloseKey",
+          "RegQueryValueExW",
+          "RegOpenKeyExW",
+          "CryptReleaseContext",
+          "CryptGenRandom",
+          "ReportEventA",
+          "RegisterEventSourceA",
+          "DeregisterEventSource",
+          "CryptDestroyHash",
+          "CryptHashData",
+          "CryptCreateHash",
+          "CryptGetHashParam",
+          "CryptAcquireContextW",
+          "RegSetValueExA"
+        ]
+      },
+      {
+        "dll": "GDI32.dll",
+        "symbols": [
+          "ChoosePixelFormat",
+          "SetPixelFormat",
+          "GetDeviceCaps",
+          "SwapBuffers"
+        ]
+      },
+      {
+        "dll": "SHELL32.dll",
+        "symbols": [
+          "ShellExecuteW",
+          "SHGetFolderPathW",
+          "CommandLineToArgvW",
+          "SHFileOperationW"
+        ]
+      },
+      {
+        "dll": "OPENGL32.dll",
+        "symbols": [
+          "wglCreateContext",
+          "wglMakeCurrent",
+          "wglGetCurrentDC",
+          "wglGetCurrentContext",
+          "wglGetProcAddress",
+          "wglDeleteContext"
+        ]
+      },
+      {
+        "dll": "WINMM.dll",
+        "symbols": [
+          "waveOutClose",
+          "waveOutPrepareHeader",
+          "waveOutGetNumDevs",
+          "waveOutGetDevCapsA",
+          "waveOutGetDevCapsW",
+          "waveOutOpen",
+          "waveInStart",
+          "waveInAddBuffer",
+          "waveInUnprepareHeader",
+          "waveInPrepareHeader",
+          "waveInClose",
+          "waveInReset",
+          "waveInOpen",
+          "waveInGetDevCapsW",
+          "waveInGetDevCapsA",
+          "waveInGetNumDevs",
+          "waveOutGetPosition",
+          "waveOutReset",
+          "waveOutWrite",
+          "waveOutUnprepareHeader",
+          "timeEndPeriod",
+          "timeBeginPeriod",
+          "timeGetTime"
+        ]
+      },
+      {
+        "dll": "OLEAUT32.dll",
+        "symbols": [
+          "SysFreeString",
+          "VariantInit",
+          "VariantClear",
+          "SysAllocString",
+          "VariantChangeType"
+        ]
+      },
+      {
+        "dll": "IMM32.dll",
+        "symbols": [
+          "ImmSetCompositionStringW",
+          "ImmGetCompositionStringW",
+          "ImmAssociateContextEx",
+          "ImmAssociateContext",
+          "ImmReleaseContext",
+          "ImmGetConversionStatus",
+          "ImmNotifyIME",
+          "ImmGetContext"
+        ]
+      },
+      {
+        "dll": "WINHTTP.dll",
+        "symbols": [
+          "WinHttpGetIEProxyConfigForCurrentUser"
+        ]
+      },
+      {
+        "dll": "bcrypt.dll",
+        "symbols": [
+          "BCryptGenRandom"
+        ]
+      },
+      {
+        "dll": "HID.DLL",
+        "symbols": [
+          "HidP_SetUsageValue",
+          "HidP_SetUsages",
+          "HidP_GetData",
+          "HidP_MaxDataListLength",
+          "HidP_GetValueCaps",
+          "HidP_GetButtonCaps",
+          "HidP_GetCaps",
+          "HidD_GetHidGuid",
+          "HidD_GetPreparsedData",
+          "HidD_FreePreparsedData",
+          "HidD_GetProductString",
+          "HidD_GetManufacturerString",
+          "HidD_GetSerialNumberString",
+          "HidD_GetAttributes"
+        ]
+      },
+      {
+        "dll": "CRYPT32.dll",
+        "symbols": [
+          "CertVerifyCertificateChainPolicy",
+          "CertFreeCertificateChain",
+          "CertGetCertificateChain",
+          "CertAddEncodedCertificateToStore",
+          "CertFreeCertificateContext",
+          "CertCloseStore",
+          "CertOpenStore"
+        ]
+      },
+      {
+        "dll": "WS2_32.dll",
+        "symbols": [
+          "WSASendDisconnect",
+          "gethostbyaddr",
+          "WSACancelAsyncRequest",
+          "WSAAsyncGetHostByName",
+          "WSASetEvent",
+          "WSAResetEvent",
+          "WSAEventSelect",
+          "WSAEnumNetworkEvents",
+          "WSAWaitForMultipleEvents",
+          "WSASocketW",
+          "WSACreateEvent",
+          "WSACloseEvent",
+          "getsockopt",
+          "WSARecvFrom",
+          "getprotobyname",
+          "gethostbyname",
+          "getpeername",
+          "ntohl",
+          "getnameinfo",
+          "freeaddrinfo",
+          "getaddrinfo",
+          "WSAIoctl",
+          "WSACleanup",
+          "WSAStartup",
+          "gethostname",
+          "socket",
+          "shutdown",
+          "setsockopt",
+          "sendto",
+          "recvfrom",
+          "htonl",
+          "__WSAFDIsSet",
+          "WSASocketA",
+          "WSAGetLastError",
+          "WSASetLastError",
+          "send",
+          "select",
+          "recv",
+          "ntohs",
+          "listen",
+          "inet_addr",
+          "htons",
+          "getsockname",
+          "ioctlsocket",
+          "connect",
+          "closesocket",
+          "bind",
+          "accept"
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "name": "UnityMain",
+        "rva": 4327696,
+        "ordinal": 1
+      }
+    ],
+    "ascii_strings_count": 70176,
+    "url_like_strings_count": 37,
+    "unity_versions": [
+      "2018.3.0a1",
+      "2020.3.30f1"
+    ]
+  },
+  {
+    "path": "baselib.dll",
+    "machine": "0x14c",
+    "pe_magic": "0x10b",
+    "image_base": "0x10000000",
+    "entry_rva": "0x1258a",
+    "clr_header": false,
+    "versions": [],
+    "sections": [
+      {
+        "name": ".text",
+        "rva": 4096,
+        "virtual_size": 272052,
+        "raw_size": 272384,
+        "entropy": 6.65,
+        "flags": "0x60000020"
+      },
+      {
+        "name": ".rdata",
+        "rva": 278528,
+        "virtual_size": 87770,
+        "raw_size": 88064,
+        "entropy": 5.7,
+        "flags": "0x40000040"
+      },
+      {
+        "name": ".data",
+        "rva": 368640,
+        "virtual_size": 14896,
+        "raw_size": 8192,
+        "entropy": 4.322,
+        "flags": "0xc0000040"
+      },
+      {
+        "name": ".reloc",
+        "rva": 385024,
+        "virtual_size": 15120,
+        "raw_size": 15360,
+        "entropy": 6.55,
+        "flags": "0x42000040"
+      }
+    ],
+    "imports": [
+      {
+        "dll": "WS2_32.dll",
+        "symbols": [
+          "accept",
+          "WSAWaitForMultipleEvents",
+          "WSASocketW",
+          "WSAIoctl",
+          "WSACreateEvent",
+          "WSACloseEvent",
+          "WSAGetLastError",
+          "shutdown",
+          "setsockopt",
+          "sendto",
+          "send",
+          "select",
+          "recvfrom",
+          "recv",
+          "listen",
+          "getsockopt",
+          "getsockname",
+          "ioctlsocket",
+          "connect",
+          "closesocket",
+          "bind",
+          "__WSAFDIsSet"
+        ]
+      },
+      {
+        "dll": "KERNEL32.dll",
+        "symbols": [
+          "IsProcessorFeaturePresent",
+          "WriteConsoleW",
+          "SetStdHandle",
+          "GetProcessHeap",
+          "FreeEnvironmentStringsW",
+          "GetEnvironmentStringsW",
+          "GetCommandLineW",
+          "GetCommandLineA",
+          "GetOEMCP",
+          "GetACP",
+          "IsValidCodePage",
+          "FindNextFileW",
+          "FindFirstFileExW",
+          "FindClose",
+          "SetFilePointerEx",
+          "HeapQueryInformation",
+          "HeapSize",
+          "HeapReAlloc",
+          "GetConsoleMode",
+          "RaiseException",
+          "GetLastError",
+          "CreateFileW",
+          "GetFileAttributesW",
+          "GetFileSizeEx",
+          "ReadFile",
+          "IsDebuggerPresent",
+          "CloseHandle",
+          "QueryPerformanceCounter",
+          "QueryPerformanceFrequency",
+          "ReleaseSemaphore",
+          "WaitForSingleObject",
+          "WaitForSingleObjectEx",
+          "CreateSemaphoreExW",
+          "SwitchToThread",
+          "CreateThread",
+          "GetCurrentThreadId",
+          "ResumeThread",
+          "TlsAlloc",
+          "TlsFree",
+          "GetThreadId",
+          "GetNativeSystemInfo",
+          "VirtualAlloc",
+          "VirtualFree",
+          "VirtualQuery",
+          "FreeLibrary",
+          "GetModuleHandleW",
+          "GetProcAddress",
+          "LoadLibraryW",
+          "FormatMessageW",
+          "MultiByteToWideChar",
+          "WideCharToMultiByte",
+          "Sleep",
+          "EnterCriticalSection",
+          "LeaveCriticalSection",
+          "TryEnterCriticalSection",
+          "DeleteCriticalSection",
+          "SetLastError",
+          "InitializeCriticalSectionAndSpinCount",
+          "CreateEventW",
+          "TlsGetValue",
+          "TlsSetValue",
+          "GetSystemTimeAsFileTime",
+          "GetTickCount",
+          "EncodePointer",
+          "DecodePointer",
+          "LCMapStringW",
+          "GetLocaleInfoW",
+          "GetStringTypeW",
+          "GetCPInfo",
+          "SetEvent",
+          "ResetEvent",
+          "UnhandledExceptionFilter",
+          "SetUnhandledExceptionFilter",
+          "GetStartupInfoW",
+          "GetCurrentProcessId",
+          "InitializeSListHead",
+          "GetCurrentProcess",
+          "TerminateProcess",
+          "CreateTimerQueue",
+          "SignalObjectAndWait",
+          "SetThreadPriority",
+          "GetThreadPriority",
+          "GetLogicalProcessorInformation",
+          "CreateTimerQueueTimer",
+          "ChangeTimerQueueTimer",
+          "DeleteTimerQueueTimer",
+          "GetNumaHighestNodeNumber",
+          "GetProcessAffinityMask",
+          "SetThreadAffinityMask",
+          "RegisterWaitForSingleObject",
+          "UnregisterWait",
+          "GetCurrentThread",
+          "GetThreadTimes",
+          "FreeLibraryAndExitThread",
+          "GetModuleFileNameW",
+          "GetModuleHandleA",
+          "LoadLibraryExW",
+          "GetVersionExW",
+          "VirtualProtect",
+          "DuplicateHandle",
+          "InterlockedPopEntrySList",
+          "InterlockedPushEntrySList",
+          "InterlockedFlushSList",
+          "QueryDepthSList",
+          "UnregisterWaitEx",
+          "GetConsoleCP",
+          "RtlUnwind",
+          "GetModuleHandleExW",
+          "ExitProcess",
+          "HeapAlloc",
+          "HeapFree",
+          "IsValidLocale",
+          "GetUserDefaultLCID",
+          "EnumSystemLocalesW",
+          "GetStdHandle",
+          "GetFileType",
+          "FlushFileBuffers",
+          "WriteFile"
+        ]
+      }
+    ],
+    "exports": [
+      {
+        "name": "??0AbortShim@il2cpp_baselib@@QAE@P6A_NW4Baselib_ErrorCode@1@PAX@Z1@Z",
+        "rva": 17824,
+        "ordinal": 1
+      },
+      {
+        "name": "??0Thread@il2cpp_baselib@baselib@@QAE@$$QAV012@@Z",
+        "rva": 6336,
+        "ordinal": 2
+      },
+      {
+        "name": "??0Thread@il2cpp_baselib@baselib@@QAE@XZ",
+        "rva": 6368,
+        "ordinal": 3
+      },
+      {
+        "name": "??1Thread@il2cpp_baselib@baselib@@QAE@XZ",
+        "rva": 7376,
+        "ordinal": 4
+      },
+      {
+        "name": "??4AbortShim@il2cpp_baselib@@QAEAAV01@$$QAV01@@Z",
+        "rva": 17952,
+        "ordinal": 5
+      },
+      {
+        "name": "??4AbortShim@il2cpp_baselib@@QAEAAV01@ABV01@@Z",
+        "rva": 17952,
+        "ordinal": 6
+      },
+      {
+        "name": "??4Thread@il2cpp_baselib@baselib@@QAEAAV012@$$QAV012@@Z",
+        "rva": 7600,
+        "ordinal": 7
+      },
+      {
+        "name": "??6il2cpp_baselib@@YAAAV?$basic_ostream@DU?$char_traits@D@std@@@std@@AAV12@ABW4Baselib_ErrorCode@0@@Z",
+        "rva": 8208,
+        "ordinal": 8
+      },
+      {
+        "name": "?Baselib_Debug_IsDebuggerAttached@il2cpp_baselib@@YA_NXZ",
+        "rva": 27536,
+        "ordinal": 9
+      },
+      {
+        "name": "?Baselib_DynamicLibrary_Close@il2cpp_baselib@@YAXUBaselib_DynamicLibrary_Handle@1@@Z",
+        "rva": 27552,
+        "ordinal": 10
+      },
+      {
+        "name": "?Baselib_DynamicLibrary_GetFunction@il2cpp_baselib@@YAPAXUBaselib_DynamicLibrary_Handle@1@PBDPAUBaselib_ErrorState@1@@Z",
+        "rva": 27584,
+        "ordinal": 11
+      },
+      {
+        "name": "?Baselib_DynamicLibrary_Open@il2cpp_baselib@@YA?AUBaselib_DynamicLibrary_Handle@1@PBDPAUBaselib_ErrorState@1@@Z",
+        "rva": 28256,
+        "ordinal": 12
+      },
+      {
+        "name": "?Baselib_ErrorState_Explain@il2cpp_baselib@@YAIPBUBaselib_ErrorState@1@QADIW4Baselib_ErrorState_ExplainVerbosity@1@@Z",
+        "rva": 28704,
+        "ordinal": 13
+      },
+      {
+        "name": "?Baselib_ErrorState_FormatAndStoreExtraInformation@il2cpp_baselib@@YA_KPBDPAD@Z",
+        "rva": 9600,
+        "ordinal": 14
+      },
+      {
+        "name": "?Baselib_FileIO_EventQueue_Create@il2cpp_baselib@@YA?AUBaselib_FileIO_EventQueue@1@XZ",
+        "rva": 30640,
+        "ordinal": 15
+      },
+      {
+        "name": "?Baselib_FileIO_EventQueue_Dequeue@il2cpp_baselib@@YA_KUBaselib_FileIO_EventQueue@1@QAUBaselib_FileIO_EventQueue_Result@1@_KI@Z",
+        "rva": 30944,
+        "ordinal": 16
+      },
+      {
+        "name": "?Baselib_FileIO_EventQueue_Free@il2cpp_baselib@@YAXUBaselib_FileIO_EventQueue@1@@Z",
+        "rva": 31008,
+        "ordinal": 17
+      },
+      {
+        "name": "?Baselib_FileIO_File_Close@il2cpp_baselib@@YAXUBaselib_FileIO_File@1@@Z",
+        "rva": 31040,
+        "ordinal": 18
+      },
+      {
+        "name": "?Baselib_FileIO_File_Open@il2cpp_baselib@@YA?AUBaselib_FileIO_File@1@UBaselib_FileIO_EventQueue@1@PBD_KW4Baselib_FileIO_Priority@1@@Z",
+        "rva": 31088,
+        "ordinal": 19
+      },
+      {
+        "name": "?Baselib_FileIO_File_Read@il2cpp_baselib@@YAXUBaselib_FileIO_File@1@QAUBaselib_FileIO_ReadRequest@1@_K2W4Baselib_FileIO_Priority@1@@Z",
+        "rva": 31376,
+        "ordinal": 20
+      },
+      {
+        "name": "?Baselib_Memory_AlignedAllocate@il2cpp_baselib@@YAPAXII@Z",
+        "rva": 31760,
+        "ordinal": 21
+      },
+      {
+        "name": "?Baselib_Memory_AlignedFree@il2cpp_baselib@@YAXPAX@Z",
+        "rva": 31856,
+        "ordinal": 22
+      },
+      {
+        "name": "?Baselib_Memory_AlignedReallocate@il2cpp_baselib@@YAPAXPAXII@Z",
+        "rva": 31872,
+        "ordinal": 23
+      },
+      {
+        "name": "?Baselib_Memory_Allocate@il2cpp_baselib@@YAPAXI@Z",
+        "rva": 32048,
+        "ordinal": 24
+      },
+      {
+        "name": "?Baselib_Memory_AllocatePages@il2cpp_baselib@@YA?AUBaselib_Memory_PageAllocation@1@_K00W4Baselib_Memory_PageState@1@PAUBaselib_ErrorState@1@@Z",
+        "rva": 32816,
+        "ordinal": 25
+      },
+      {
+        "name": "?Baselib_Memory_Free@il2cpp_baselib@@YAXPAX@Z",
+        "rva": 32992,
+        "ordinal": 26
+      },
+      {
+        "name": "?Baselib_Memory_GetPageSizeInfo@il2cpp_baselib@@YAXPAUBaselib_Memory_PageSizeInfo@1@@Z",
+        "rva": 33008,
+        "ordinal": 27
+      },
+      {
+        "name": "?Baselib_Memory_Reallocate@il2cpp_baselib@@YAPAXPAXI@Z",
+        "rva": 33952,
+        "ordinal": 28
+      },
+      {
+        "name": "?Baselib_Memory_ReleasePages@il2cpp_baselib@@YAXUBaselib_Memory_PageAllocation@1@PAUBaselib_ErrorState@1@@Z",
+        "rva": 34016,
+        "ordinal": 29
+      },
+      {
+        "name": "?Baselib_Memory_SetPageState@il2cpp_baselib@@YAXPAX_K1W4Baselib_Memory_PageState@1@PAUBaselib_ErrorState@1@@Z",
+        "rva": 34336,
+        "ordinal": 30
+      },
+      {
+        "name": "?Baselib_NetworkAddress_Decode@il2cpp_baselib@@YAXPBUBaselib_NetworkAddress@1@PAW4Baselib_NetworkAddress_Family@1@QADIPAGPAUBaselib_ErrorState@1@@Z",
+        "rva": 18032,
+        "ordinal": 31
+      },
+      {
+        "name": "?Baselib_NetworkAddress_Encode@il2cpp_baselib@@YAXPAUBaselib_NetworkAddress@1@W4Baselib_NetworkAddress_Family@1@QBDGPAUBaselib_ErrorState@1@@Z",
+        "rva": 18416,
+        "ordinal": 32
+      },
+      {
+        "name": "?Baselib_Process_Abort@il2cpp_baselib@@YAXW4Baselib_ErrorCode@1@@Z",
+        "rva": 34656,
+        "ordinal": 33
+      },
+      {
+        "name": "?Baselib_RegisteredNetwork_BufferSlice_Create@il2cpp_baselib@@YA?AUBaselib_RegisteredNetwork_BufferSlice@1@UBaselib_RegisteredNetwork_Buffer@1@II@Z",
+        "rva": 19072,
+        "ordinal": 34
+      },
+      {
+        "name": "?Baselib_RegisteredNetwork_BufferSlice_Empty@il2cpp_baselib@@YA?AUBaselib_RegisteredNetwork_BufferSlice@1@XZ",
+        "rva": 19120,
+        "ordinal": 35
+      },
+      {
+        "name": "?Baselib_RegisteredNetwork_Buffer_Deregister@il2cpp_baselib@@YAXUBaselib_RegisteredNetwork_Buffer@1@@Z",
+        "rva": 34672,
+        "ordinal": 36
+      },
+      {
+        "name": "?Baselib_RegisteredNetwork_Buffer_Register@il2cpp_baselib@@YA?AUBaselib_RegisteredNetwork_Buffer@1@UBaselib_Memory_PageAllocation@1@PAUBaselib_ErrorState@1@@Z",
+        "rva": 34704,
+        "ordinal": 37
+      },
+      {
+        "name": "?Baselib_RegisteredNetwork_Endpoint_Create@il2cpp_baselib@@YA?AUBaselib_RegisteredNetwork_Endpoint@1@PBUBaselib_NetworkAddress@1@UBaselib_RegisteredNetwork_BufferSlice@1@PAUBaselib_ErrorState@1@@Z",
+        "rva": 35360,
+        "ordinal": 38
+      },
+      {
+        "name": "?Baselib_RegisteredNetwork_Endpoint_Empty@il2cpp_baselib@@YA?AUBaselib_RegisteredNetwork_Endpoint@1@XZ",
+        "rva": 19168,
+        "ordinal": 39
+      },
+      {
+        "name": "?Baselib_RegisteredNetwork_Endpoint_GetNetworkAddress@il2cpp_baselib@@YAXUBaselib_RegisteredNetwork_Endpoint@1@PAUBaselib_NetworkAddress@1@PAUBaselib_ErrorState@1@@Z",
+        "rva": 36032,
+        "ordinal": 40
+      },
+      {
+        "name": "?Baselib_RegisteredNetwork_Socket_UDP_Close@il2cpp_baselib@@YAXUBaselib_RegisteredNetwork_Socket_UDP@1@@Z",
+        "rva": 36496,
+        "ordinal": 41
+      },
+      {
+        "name": "?Baselib_RegisteredNetwork_Socket_UDP_Create@il2cpp_baselib@@YA?AUBaselib_RegisteredNetwork_Socket_UDP@1@PBUBaselib_NetworkAddress@1@W4Baselib_NetworkAddress_AddressReuse@1@IIPAUBaselib_ErrorState@1@@Z",
+        "rva": 36704,
+        "ordinal": 42
+      },
+      {
+        "name": "?Baselib_RegisteredNetwork_Socket_UDP_DequeueRecv@il2cpp_baselib@@YAIUBaselib_RegisteredNetwork_Socket_UDP@1@QAUBaselib_RegisteredNetwork_CompletionResult@1@IPAUBaselib_ErrorState@1@@Z",
+        "rva": 37280,
+        "ordinal": 43
+      },
+      {
+        "name": "?Baselib_RegisteredNetwork_Socket_UDP_DequeueSend@il2cpp_baselib@@YAIUBaselib_RegisteredNetwork_Socket_UDP@1@QAUBaselib_RegisteredNetwork_CompletionResult@1@IPAUBaselib_ErrorState@1@@Z",
+        "rva": 37728,
+        "ordinal": 44
+      },
+      {
+        "name": "?Baselib_RegisteredNetwork_Socket_UDP_GetNetworkAddress@il2cpp_baselib@@YAXUBaselib_RegisteredNetwork_Socket_UDP@1@PAUBaselib_NetworkAddress@1@PAUBaselib_ErrorState@1@@Z",
+        "rva": 38176,
+        "ordinal": 45
+      },
+      {
+        "name": "?Baselib_RegisteredNetwork_Socket_UDP_ProcessRecv@il2cpp_baselib@@YA?AW4Baselib_RegisteredNetwork_ProcessStatus@1@UBaselib_RegisteredNetwork_Socket_UDP@1@PAUBaselib_ErrorState@1@@Z",
+        "rva": 38432,
+        "ordinal": 46
+      },
+      {
+        "name": "?Baselib_RegisteredNetwork_Socket_UDP_ProcessSend@il2cpp_baselib@@YA?AW4Baselib_RegisteredNetwork_ProcessStatus@1@UBaselib_RegisteredNetwork_Socket_UDP@1@PAUBaselib_ErrorState@1@@Z",
+        "rva": 38608,
+        "ordinal": 47
+      },
+      {
+        "name": "?Baselib_RegisteredNetwork_Socket_UDP_ScheduleRecv@il2cpp_baselib@@YAIUBaselib_RegisteredNetwork_Socket_UDP@1@PBUBaselib_RegisteredNetwork_Request@1@IPAUBaselib_ErrorState@1@@Z",
+        "rva": 39168,
+        "ordinal": 48
+      },
+      {
+        "name": "?Baselib_RegisteredNetwork_Socket_UDP_ScheduleSend@il2cpp_baselib@@YAIUBaselib_RegisteredNetwork_Socket_UDP@1@PBUBaselib_RegisteredNetwork_Request@1@IPAUBaselib_ErrorState@1@@Z",
+        "rva": 39712,
+        "ordinal": 49
+      },
+      {
+        "name": "?Baselib_RegisteredNetwork_Socket_UDP_WaitForCompletedRecv@il2cpp_baselib@@YA?AW4Baselib_RegisteredNetwork_CompletionQueueStatus@1@UBaselib_RegisteredNetwork_Socket_UDP@1@IPAUBaselib_ErrorState@1@@Z",
+        "rva": 39872,
+        "ordinal": 50
+      },
+      {
+        "name": "?Baselib_RegisteredNetwork_Socket_UDP_WaitForCompletedSend@il2cpp_baselib@@YA?AW4Baselib_RegisteredNetwork_CompletionQueueStatus@1@UBaselib_RegisteredNetwork_Socket_UDP@1@IPAUBaselib_ErrorState@1@@Z",
+        "rva": 40080,
+        "ordinal": 51
+      },
+      {
+        "name": "?Baselib_Socket_Bind@il2cpp_baselib@@YAXUBaselib_Socket_Handle@1@PBUBaselib_NetworkAddress@1@W4Baselib_NetworkAddress_AddressReuse@1@PAUBaselib_ErrorState@1@@Z",
+        "rva": 40704,
+        "ordinal": 52
+      },
+      {
+        "name": "?Baselib_Socket_Close@il2cpp_baselib@@YAXUBaselib_Socket_Handle@1@@Z",
+        "rva": 41072,
+        "ordinal": 53
+      },
+      {
+        "name": "?Baselib_Socket_Create@il2cpp_baselib@@YA?AUBaselib_Socket_Handle@1@W4Baselib_NetworkAddress_Family@1@W4Baselib_Socket_Protocol@1@PAUBaselib_ErrorState@1@@Z",
+        "rva": 41088,
+        "ordinal": 54
+      },
+      {
+        "name": "?Baselib_Socket_GetAddress@il2cpp_baselib@@YAXUBaselib_Socket_Handle@1@PAUBaselib_NetworkAddress@1@PAUBaselib_ErrorState@1@@Z",
+        "rva": 42368,
+        "ordinal": 55
+      },
+      {
+        "name": "?Baselib_Socket_Poll@il2cpp_baselib@@YAXPAUBaselib_Socket_PollFd@1@IIPAUBaselib_ErrorState@1@@Z",
+        "rva": 44080,
+        "ordinal": 56
+      },
+      {
+        "name": "?Baselib_Socket_TCP_Accept@il2cpp_baselib@@YA?AUBaselib_Socket_Handle@1@U21@PAUBaselib_ErrorState@1@@Z",
+        "rva": 45088,
+        "ordinal": 57
+      },
+      {
+        "name": "?Baselib_Socket_TCP_Connect@il2cpp_baselib@@YAXUBaselib_Socket_Handle@1@PBUBaselib_NetworkAddress@1@W4Baselib_NetworkAddress_AddressReuse@1@PAUBaselib_ErrorState@1@@Z",
+        "rva": 46112,
+        "ordinal": 58
+      },
+      {
+        "name": "?Baselib_Socket_TCP_Listen@il2cpp_baselib@@YAXUBaselib_Socket_Handle@1@PAUBaselib_ErrorState@1@@Z",
+        "rva": 46672,
+        "ordinal": 59
+      },
+      {
+        "name": "?Baselib_Socket_TCP_Recv@il2cpp_baselib@@YAIUBaselib_Socket_Handle@1@PAXIPAUBaselib_ErrorState@1@@Z",
+        "rva": 47248,
+        "ordinal": 60
+      },
+      {
+        "name": "?Baselib_Socket_TCP_Send@il2cpp_baselib@@YAIUBaselib_Socket_Handle@1@PAXIPAUBaselib_ErrorState@1@@Z",
+        "rva": 47824,
+        "ordinal": 61
+      },
+      {
+        "name": "?Baselib_Socket_UDP_Recv@il2cpp_baselib@@YAIUBaselib_Socket_Handle@1@QAUBaselib_Socket_Message@1@IPAUBaselib_ErrorState@1@@Z",
+        "rva": 48640,
+        "ordinal": 62
+      },
+      {
+        "name": "?Baselib_Socket_UDP_Send@il2cpp_baselib@@YAIUBaselib_Socket_Handle@1@QAUBaselib_Socket_Message@1@IPAUBaselib_ErrorState@1@@Z",
+        "rva": 49872,
+        "ordinal": 63
+      },
+      {
+        "name": "?Baselib_SystemFutex_Notify@il2cpp_baselib@@YAXPAHIW4Baselib_WakeupFallbackStrategy@1@@Z",
+        "rva": 50112,
+        "ordinal": 64
+      },
+      {
+        "name": "?Baselib_SystemFutex_Wait@il2cpp_baselib@@YAXPAHHI@Z",
+        "rva": 50240,
+        "ordinal": 65
+      },
+      {
+        "name": "?Baselib_SystemSemaphore_Acquire@il2cpp_baselib@@YAXUBaselib_SystemSemaphore_Handle@1@@Z",
+        "rva": 50544,
+        "ordinal": 66
+      },
+      {
+        "name": "?Baselib_SystemSemaphore_Create@il2cpp_baselib@@YA?AUBaselib_SystemSemaphore_Handle@1@XZ",
+        "rva": 50576,
+        "ordinal": 67
+      },
+      {
+        "name": "?Baselib_SystemSemaphore_Free@il2cpp_baselib@@YAXUBaselib_SystemSemaphore_Handle@1@@Z",
+        "rva": 50624,
+        "ordinal": 68
+      },
+      {
+        "name": "?Baselib_SystemSemaphore_Release@il2cpp_baselib@@YAXUBaselib_SystemSemaphore_Handle@1@I@Z",
+        "rva": 50640,
+        "ordinal": 69
+      },
+      {
+        "name": "?Baselib_SystemSemaphore_TryAcquire@il2cpp_baselib@@YA_NUBaselib_SystemSemaphore_Handle@1@@Z",
+        "rva": 50752,
+        "ordinal": 70
+      },
+      {
+        "name": "?Baselib_SystemSemaphore_TryTimedAcquire@il2cpp_baselib@@YA_NUBaselib_SystemSemaphore_Handle@1@I@Z",
+        "rva": 50800,
+        "ordinal": 71
+      },
+      {
+        "name": "?Baselib_TLS_Alloc@il2cpp_baselib@@YAIXZ",
+        "rva": 50848,
+        "ordinal": 72
+      },
+      {
+        "name": "?Baselib_TLS_Free@il2cpp_baselib@@YAXI@Z",
+        "rva": 50880,
+        "ordinal": 73
+      },
+      {
+        "name": "?Baselib_Thread_Create@il2cpp_baselib@@YAPAUBaselib_Thread@1@UBaselib_Thread_Config@1@PAUBaselib_ErrorState@1@@Z",
+        "rva": 50896,
+        "ordinal": 74
+      },
+      {
+        "name": "?Baselib_Thread_GetCurrentThreadId@il2cpp_baselib@@YAHXZ",
+        "rva": 51200,
+        "ordinal": 75
+      },
+      {
+        "name": "?Baselib_Thread_GetId@il2cpp_baselib@@YAHPAUBaselib_Thread@1@@Z",
+        "rva": 51216,
+        "ordinal": 76
+      },
+      {
+        "name": "?Baselib_Thread_Join@il2cpp_baselib@@YAXPAUBaselib_Thread@1@IPAUBaselib_ErrorState@1@@Z",
+        "rva": 51232,
+        "ordinal": 77
+      },
+      {
+        "name": "?Baselib_Thread_SupportsThreads@il2cpp_baselib@@YA_NXZ",
+        "rva": 51920,
+        "ordinal": 78
+      },
+      {
+        "name": "?Baselib_Thread_YieldExecution@il2cpp_baselib@@YAXXZ",
+        "rva": 51936,
+        "ordinal": 79
+      },
+      {
+        "name": "?Baselib_Timer_GetHighPrecisionTimerTicks@il2cpp_baselib@@YA_KXZ",
+        "rva": 51952,
+        "ordinal": 80
+      },
+      {
+        "name": "?Baselib_Timer_GetTicksToNanosecondsConversionRatio@il2cpp_baselib@@YA?AUBaselib_Timer_TickToNanosecondConversionRatio@1@XZ",
+        "rva": 52000,
+        "ordinal": 81
+      },
+      {
+        "name": "?Baselib_Timer_GetTimeSinceStartupInSeconds@il2cpp_baselib@@YANXZ",
+        "rva": 52256,
+        "ordinal": 82
+      },
+      {
+        "name": "?Baselib_Timer_TickToNanosecondsConversionFactor@il2cpp_baselib@@3NB",
+        "rva": 376424,
+        "ordinal": 83
+      },
+      {
+        "name": "?Baselib_Timer_WaitForAtLeast@il2cpp_baselib@@YAXI@Z",
+        "rva": 52272,
+        "ordinal": 84
+      },
+      {
+        "name": "?Call@AbortShim@il2cpp_baselib@@QAE_NW4Baselib_ErrorCode@2@@Z",
+        "rva": 19216,
+        "ordinal": 85
+      },
+      {
+        "name": "?CreateThread@Thread@il2cpp_baselib@baselib@@CAPAUBaselib_Thread@2@P6AXPAX@Z0@Z",
+        "rva": 9744,
+        "ordinal": 86
+      },
+      {
+        "name": "?Detail_Baselib_EventSemaphore_SemaphoreBased_AcquireNonSet@il2cpp_baselib@@YAXHPAUBaselib_EventSemaphore@@@Z",
+        "rva": 19248,
+        "ordinal": 87
+      },
+      {
+        "name": "?Detail_Baselib_EventSemaphore_SemaphoreBased_TryTimedAcquireNonSet@il2cpp_baselib@@YA_NHPAUBaselib_EventSemaphore@@I@Z",
+        "rva": 19616,
+        "ordinal": 88
+      },
+      {
+        "name": "?Empty@AbortShim@il2cpp_baselib@@SA?AV12@XZ",
+        "rva": 19808,
+        "ordinal": 89
+      },
+      {
+        "name": "?GetCurrentId@Thread@il2cpp_baselib@baselib@@SAHXZ",
+        "rva": 10032,
+        "ordinal": 90
+      },
+      {
+        "name": "?GetId@Thread@il2cpp_baselib@baselib@@QAEHXZ",
+        "rva": 10048,
+        "ordinal": 91
+      },
+      {
+        "name": "?SetAbortShim@il2cpp_baselib@@YA?AVAbortShim@1@V21@@Z",
+        "rva": 19840,
+        "ordinal": 92
+      },
+      {
+        "name": "?ShimmableAbort@il2cpp_baselib@@YAXW4Baselib_ErrorCode@1@@Z",
+        "rva": 19888,
+        "ordinal": 93
+      },
+      {
+        "name": "?SupportsThreads@Thread@il2cpp_baselib@baselib@@SA_NXZ",
+        "rva": 10064,
+        "ordinal": 94
+      },
+      {
+        "name": "?TryJoin@Thread@il2cpp_baselib@baselib@@QAE_NV?$duration@IU?$ratio@$00$0DOI@@std@@@chrono@std@@@Z",
+        "rva": 10080,
+        "ordinal": 95
+      },
+      {
+        "name": "?YieldExecution@Thread@il2cpp_baselib@baselib@@SAXXZ",
+        "rva": 10192,
+        "ordinal": 96
+      },
+      {
+        "name": "?detail_AssertLog@il2cpp_baselib@@YAXPBDZZ",
+        "rva": 14464,
+        "ordinal": 97
+      }
+    ],
+    "ascii_strings_count": 1609,
+    "url_like_strings_count": 19,
+    "unity_versions": []
+  }
+]

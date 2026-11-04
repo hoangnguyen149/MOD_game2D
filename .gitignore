@@ -1,0 +1,11 @@
+**/bin/
+**/obj/
+game-client/Library/
+game-client/Temp/
+game-client/Logs/
+game-client/UserSettings/
+Builds/
+*.user
+artifacts/
+**/profiles.json
+**/launcher.log

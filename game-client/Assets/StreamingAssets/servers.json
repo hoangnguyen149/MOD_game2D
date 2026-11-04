@@ -1,0 +1,28 @@
+{
+  "servers": [
+    {
+      "id": "meadow",
+      "name": "Local Meadow",
+      "url": "http://127.0.0.1:5077/",
+      "fault": "none"
+    },
+    {
+      "id": "meadow",
+      "name": "Demo: login rejected",
+      "url": "http://127.0.0.1:5077/",
+      "fault": "login-error"
+    },
+    {
+      "id": "meadow",
+      "name": "Demo: login timeout",
+      "url": "http://127.0.0.1:5077/",
+      "fault": "timeout"
+    },
+    {
+      "id": "meadow",
+      "name": "Demo: disconnect on position",
+      "url": "http://127.0.0.1:5077/",
+      "fault": "disconnect"
+    }
+  ]
+}

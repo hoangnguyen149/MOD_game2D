@@ -1,0 +1,9 @@
+Il2CppDumper v6.7.46, console PTY rerun
+Metadata Version: 27
+Il2Cpp Version: 27 -> detected 27.1
+CodeRegistration VA: 1102b9b0
+MetadataRegistration VA: 1102d4f0
+Dumping: Done
+Generate struct: Done
+Generate dummy dll: Done
+ReadKey completed; process exit code: 0

@@ -1,0 +1,15 @@
+{
+  "Version": 1,
+  "ClientPath": "",
+  "MaxClients": 2,
+  "Profiles": [
+    {
+      "Id": "c2c2290a-9016-4099-8657-157e65accf91",
+      "Name": "Demo local",
+      "Username": "demo",
+      "ServerId": "meadow",
+      "Width": 1024,
+      "Height": 600
+    }
+  ]
+}

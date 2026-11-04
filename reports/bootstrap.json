@@ -1,0 +1,13 @@
+{
+  "unitymain_sites": [
+    {
+      "instruction_rva": "0x100f",
+      "op": "call",
+      "import": "UnityPlayer.dll!UnityMain",
+      "iat_va": "0x40c100"
+    }
+  ],
+  "manager_clr_flags": "0x20003",
+  "manager_requires_32bit": true,
+  "manager_prefers_32bit": true
+}

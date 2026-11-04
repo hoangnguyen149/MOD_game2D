@@ -1,0 +1,1 @@
+<Project Sdk="Microsoft.NET.Sdk"><PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net10.0</TargetFramework><DefineConstants>$(DefineConstants);LOCAL_TESTS</DefineConstants></PropertyGroup><ItemGroup><Compile Include="../../game-client/Assets/Scripts/Core/*.cs" /></ItemGroup></Project>

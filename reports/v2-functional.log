@@ -1,0 +1,67 @@
+PASS health and explicit demo-fault mode
+PASS world requires session
+PASS character list requires session
+PASS malformed JSON rejected
+PASS null login rejected
+PASS incorrect login rejected
+PASS test account session issued
+PASS unknown server rejected
+PASS map bounds validated
+PASS character ownership validated
+PASS invalid coordinate type rejected
+PASS position update succeeds
+PASS position retained within session
+PASS logout revokes server session
+PASS anonymous character request rejected
+PASS incorrect login rejected
+PASS shared client authenticates
+PASS shared client reads servers
+PASS shared client reads named character
+PASS shared client updates position
+PASS out-of-bounds position rejected
+PASS cross-account character rejected
+PASS client clears session after logout
+PASS logged-out client denied
+PASS simulated login error
+PASS simulated timeout has clear error
+PASS timeout bounded without hanging
+PASS simulated dropped connection
+PASS transport failure clears session
+PASS remote server configuration rejected
+PASS query injection in base URL rejected
+PASS duplicate input keys rejected
+PASS invalid input keys rejected
+PASS nonfinite volume rejected
+PASS missing settings defaults
+PASS volume, input, HUD preferences roundtrip
+PASS broken settings reported
+PASS broken settings preserved
+24 API/configuration checks passed
+PASS missing config defaults
+PASS profile add persists
+PASS profile edit persists
+PASS profile delete persists
+PASS broken JSON reported
+PASS broken JSON preserved
+PASS explicit recovery archives original
+PASS unknown password field rejected
+PASS null profile rejected
+PASS storage has no password/token fields
+PASS missing executable rejected
+PASS launcher starts selected child from spaced path
+PASS client probe: login, servers, characters, position (not Unity)
+PASS end-to-end launcher -> client probe -> mock login/position
+PASS duplicate profile rejected
+PASS concurrent process limit enforced
+PASS invalid process limit rejected
+PASS two clients within raised limit
+PASS limit cannot fall below active count
+PASS stop affects only selected owned process
+PASS exit status tracked
+PASS logs contain only allowlisted events
+PASS client probe: login, servers, characters, position (not Unity)
+PASS natural client exit observed
+PASS nonzero client exit reported as error
+23 launcher checks passed
+PASS server logs contain no password/token
+15 HTTP/log checks passed

@@ -1,0 +1,27 @@
+[
+  {
+    "file": "OwnedAdventure-Windows-Tools-only.zip",
+    "bytes": 84285996,
+    "sha256": "109f70a2db6d5b93875f6da41f3c383d7f9ba9a7bca08e05ca089a9705e8e5f1"
+  },
+  {
+    "file": "OwnedAdventure-source-reports.zip",
+    "bytes": 1653397,
+    "sha256": "e9cabc4ee0b5fa76fd9d27eda992023d234e985c0767e6442a1c46150491b5b1"
+  },
+  {
+    "file": "OwnedAdventure-v2-Windows-Launcher.zip",
+    "bytes": 49909737,
+    "sha256": "9d9d29a3d0dfc612f063b2326ae81463fef9f6ba824e689b8fd81fe7ccf9dd38"
+  },
+  {
+    "file": "OwnedAdventure-v2-Windows-Server.zip",
+    "bytes": 48534626,
+    "sha256": "c5e3eb4c71690e719fbd23b30a471b312bafb810d813e7e87c8ba8f8b48f138e"
+  },
+  {
+    "file": "OwnedAdventure-v2-source-reports.zip",
+    "bytes": 1684646,
+    "sha256": "249d73db5b514304bdcc435a2517eb2fdeda63577d65d368b98fa6a82c5de0d5"
+  }
+]

@@ -1,0 +1,4 @@
+  Determining projects to restore...
+  Restored /workspace/MOD_game2D/src/Manager/Manager.csproj (in 230 ms).
+  Manager -> /workspace/MOD_game2D/src/Manager/bin/Release/net10.0/win-x64/Manager.dll
+  Manager -> /workspace/MOD_game2D/Builds/Manager/

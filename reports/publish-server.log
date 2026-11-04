@@ -1,0 +1,4 @@
+  Determining projects to restore...
+  Restored /workspace/MOD_game2D/src/MockServer/MockServer.csproj (in 2.52 sec).
+  MockServer -> /workspace/MOD_game2D/src/MockServer/bin/Release/net10.0/win-x64/MockServer.dll
+  MockServer -> /workspace/MOD_game2D/Builds/Server/

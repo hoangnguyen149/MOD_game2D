@@ -1,0 +1,216 @@
+{
+  "archive_size": 24506945,
+  "archive_sha256": "af5422d166066d1212f90407a74be9e425ba60cf5afa00791b13b576fba0e947",
+  "extracted_files": [
+    {
+      "path": "Auto Manager.exe",
+      "size": 69120,
+      "sha256": "a2f7fab7c34270efcdaeca16f10b598a365123f3dab95a4f1de042767d3b401a"
+    },
+    {
+      "path": "Background/Screenshot 2025-09-05 114755 (4).png",
+      "size": 864330,
+      "sha256": "0bee8311f2614150c71a3f919d575819979777a01d5dc6548cf540e7891937bc"
+    },
+    {
+      "path": "Data/data.ini",
+      "size": 795,
+      "sha256": "0f4f14805c35a9c455eee0c18fb9dd7b7637bd64f5726dd695e04c51b7d02157"
+    },
+    {
+      "path": "Data/keyAPI.ini",
+      "size": 33,
+      "sha256": "8ebfdc20f73d890669c3ac9598c51e07f1156712046677b9942d53b026a0a3e8"
+    },
+    {
+      "path": "GameAssembly.dll",
+      "size": 18920960,
+      "sha256": "70a205f03a217a44ce74236f35ac0363de3a72cce18c52dae9f2ef5ca135cff4"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv.exe",
+      "size": 641536,
+      "sha256": "b400bf71fceb012afd0ba4c7d17d50e55e67897b8e706a31441680e8d703077e"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/Resources/unity default resources",
+      "size": 4844872,
+      "sha256": "458713a9e0aca9b787f40e355055a9e8f8193d0a203058b21164035fc573ad4a"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/Resources/unity_builtin_extra",
+      "size": 390644,
+      "sha256": "31b34c17a0e3134b8be81f2be4a02a5a8a9e5aa1e7b119e47658c00e638bbad8"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/RuntimeInitializeOnLoads.json",
+      "size": 13,
+      "sha256": "6a33c1efd5944feb0cb1e012e26b30c3f43fec918e5643e72ab945a9c504ff13"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/ScriptingAssemblies.json",
+      "size": 2848,
+      "sha256": "a11841005eb858eb9df071df829f97070a037e43ef48b8b592dfc2fc6c090b06"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/app.info",
+      "size": 24,
+      "sha256": "2fef369f9dcbc922374a71219fce70acf286ab08cc2441b99a8d54054667e3fa"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/boot.config",
+      "size": 76,
+      "sha256": "498f352ceb88c9b8794639f77fe1119c5f8a9288208784caac0a0e1a94fdd751"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/globalgamemanagers",
+      "size": 185476,
+      "sha256": "032cf7f4fb4b799c56908cdf7a8770945c29e4a90cdcdd72933957de5171485b"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/globalgamemanagers.assets",
+      "size": 99328,
+      "sha256": "24eafb6fd925cf6ad099209e1ffba1b236b3c9d2733ae0f03195c2c5e60041de"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/il2cpp_data/Metadata/global-metadata.dat",
+      "size": 3282208,
+      "sha256": "dc01efca13c4f8e8114efdd2c351dad931e05982988be4d2053c13021a92a3d2"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/il2cpp_data/Resources/mscorlib.dll-resources.dat",
+      "size": 337563,
+      "sha256": "c5baa176a5b72cd545266340e42102d393a5e43d38c95796bc828918bb95277f"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/il2cpp_data/etc/mono/2.0/Browsers/Compat.browser",
+      "size": 1605,
+      "sha256": "8a1082057ac5681dcd4e9c227ed7fb8eb42ac1618963b5de3b65739dd77e2741"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/il2cpp_data/etc/mono/2.0/DefaultWsdlHelpGenerator.aspx",
+      "size": 60575,
+      "sha256": "751861040b69ea63a3827507b7c8da9c7f549dc181c1c8af4b7ca78cc97d710a"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/il2cpp_data/etc/mono/2.0/machine.config",
+      "size": 29116,
+      "sha256": "edc5bcf685d930a607bc097927260a3f9ac7f52dd809db68158298bfd934b7ce"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/il2cpp_data/etc/mono/2.0/settings.map",
+      "size": 2622,
+      "sha256": "49c6160f9d54af4270a3b4e997fc4a8301f79b9e2070118fa46ddbcbbc44f9a2"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/il2cpp_data/etc/mono/2.0/web.config",
+      "size": 11686,
+      "sha256": "3c1a76a5849074b437d297656a208a3bef6d84b982153542b9c797046c601dfc"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/il2cpp_data/etc/mono/4.0/Browsers/Compat.browser",
+      "size": 1605,
+      "sha256": "8a1082057ac5681dcd4e9c227ed7fb8eb42ac1618963b5de3b65739dd77e2741"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/il2cpp_data/etc/mono/4.0/DefaultWsdlHelpGenerator.aspx",
+      "size": 60575,
+      "sha256": "751861040b69ea63a3827507b7c8da9c7f549dc181c1c8af4b7ca78cc97d710a"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/il2cpp_data/etc/mono/4.0/machine.config",
+      "size": 33648,
+      "sha256": "6919d5af506aae0d93e91bd83418a81895a5554b9f54cf94aad20d025a4db664"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/il2cpp_data/etc/mono/4.0/settings.map",
+      "size": 2622,
+      "sha256": "ce1db1ad8a9512073164e3eccdc193f7eda036e1a9733caec4635de21b2865c8"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/il2cpp_data/etc/mono/4.0/web.config",
+      "size": 18848,
+      "sha256": "f1a6416eeedd9d040387fd85dcf7d6e074b6644c6829d08be220ff9fc32efb31"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/il2cpp_data/etc/mono/4.5/Browsers/Compat.browser",
+      "size": 1605,
+      "sha256": "8a1082057ac5681dcd4e9c227ed7fb8eb42ac1618963b5de3b65739dd77e2741"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/il2cpp_data/etc/mono/4.5/DefaultWsdlHelpGenerator.aspx",
+      "size": 60575,
+      "sha256": "751861040b69ea63a3827507b7c8da9c7f549dc181c1c8af4b7ca78cc97d710a"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/il2cpp_data/etc/mono/4.5/machine.config",
+      "size": 34106,
+      "sha256": "ef9b9387168fd1dd6c996f96c134d9c44f8eb06f9587004bf997252a520182d6"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/il2cpp_data/etc/mono/4.5/settings.map",
+      "size": 2622,
+      "sha256": "ce1db1ad8a9512073164e3eccdc193f7eda036e1a9733caec4635de21b2865c8"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/il2cpp_data/etc/mono/4.5/web.config",
+      "size": 18857,
+      "sha256": "15a2c7a9242bf54d3ccb3e07fa6d8f84ba8b303d8877243787a1103009941bdb"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/il2cpp_data/etc/mono/browscap.ini",
+      "size": 311984,
+      "sha256": "4ddd50f31fb968f30bedefc253a46dc3f2890192d05cdaa9e0a64a056eee807e"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/il2cpp_data/etc/mono/config",
+      "size": 3276,
+      "sha256": "60099cf91bb1a5717fc1f2d23cf36a61d3bfb70d9489fbb6f4bae98c560bf3d5"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/il2cpp_data/etc/mono/mconfig/config.xml",
+      "size": 25817,
+      "sha256": "0c56e34c69124510fa8c19e7b4c2ca6c1c4ff460ae19f798dd0ca035809e396d"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/level0",
+      "size": 4964,
+      "sha256": "8da269497029e4649286d66d4a7178e855697dc4046929e567ae70948923a9b5"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/resources.assets",
+      "size": 3947068,
+      "sha256": "5f4188113a46141654088b6e38d5b2b29306ca3a22f21d70a54799a82d329542"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/resources.assets.resS",
+      "size": 80766880,
+      "sha256": "17a9ae6eb8db320b768a75bdcc51507a22e08c653693e80c6b9087dc2534a91d"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/resources.resource",
+      "size": 315936,
+      "sha256": "ccf36b95bb52aa26af393e0486aa9062b8462afff598caa49d60d7272a9198fd"
+    },
+    {
+      "path": "Mod_Mabu6sao_Tv_Data/sharedassets0.assets",
+      "size": 4133,
+      "sha256": "f3d6cd26760acc7b887dcbc3042a50c37518abdfa4f164721455bf526240471f"
+    },
+    {
+      "path": "UnityCrashHandler32.exe",
+      "size": 1063000,
+      "sha256": "9115881fd3156695b249b731e9bd357335664b98d65c22be1329896bdea4fc27"
+    },
+    {
+      "path": "UnityPlayer.dll",
+      "size": 22023768,
+      "sha256": "15292d830c1063bfdd72cddb54b4c9b27eab04cc472491e1ab780744bbc6f46f"
+    },
+    {
+      "path": "baselib.dll",
+      "size": 392792,
+      "sha256": "56624f8e37fad6d2f49d7c43108d129c4bcd4b1cbbf59becc027ef1ef50f6709"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+  Determining projects to restore...
+  Restored /workspace/MOD_game2D/mock-server/MockServer.csproj (in 266 ms).
+  Restored /workspace/MOD_game2D/shared/Core/Core.csproj (in 262 ms).
+  Core -> /workspace/MOD_game2D/shared/Core/bin/Release/net10.0/Core.dll
+  MockServer -> /workspace/MOD_game2D/mock-server/bin/Release/net10.0/win-x64/MockServer.dll
+  MockServer -> /workspace/MOD_game2D/artifacts/windows-selfcontained/Server/
+  Determining projects to restore...
+  Restored /workspace/MOD_game2D/launcher/Core/Launcher.Core.csproj (in 185 ms).
+  Restored /workspace/MOD_game2D/launcher/WinForms/Launcher.csproj (in 2.09 sec).
+  Launcher.Core -> /workspace/MOD_game2D/launcher/Core/bin/Release/net10.0/Launcher.Core.dll
+  Launcher -> /workspace/MOD_game2D/launcher/WinForms/bin/Release/net10.0-windows/win-x64/Launcher.dll
+  Launcher -> /workspace/MOD_game2D/artifacts/windows-selfcontained/Launcher/
+  Determining projects to restore...
+  Restored /workspace/MOD_game2D/shared/Core/Core.csproj (in 134 ms).
+  Restored /workspace/MOD_game2D/mock-server/MockServer.csproj (in 220 ms).
+  Core -> /workspace/MOD_game2D/shared/Core/bin/Release/net10.0/Core.dll
+  MockServer -> /workspace/MOD_game2D/mock-server/bin/Release/net10.0/win-x64/MockServer.dll
+  MockServer -> /workspace/MOD_game2D/artifacts/windows-framework/Server/
+  Determining projects to restore...
+  Restored /workspace/MOD_game2D/launcher/Core/Launcher.Core.csproj (in 126 ms).
+  Restored /workspace/MOD_game2D/launcher/WinForms/Launcher.csproj (in 228 ms).
+  Launcher.Core -> /workspace/MOD_game2D/launcher/Core/bin/Release/net10.0/Launcher.Core.dll
+  Launcher -> /workspace/MOD_game2D/launcher/WinForms/bin/Release/net10.0-windows/win-x64/Launcher.dll
+  Launcher -> /workspace/MOD_game2D/artifacts/windows-framework/Launcher/
