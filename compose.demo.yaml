@@ -1,0 +1,4 @@
+services:
+  mock-server:
+    environment:
+      DemoFaults: "true"

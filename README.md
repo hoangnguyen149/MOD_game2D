@@ -40,3 +40,14 @@ Mở `game-client` bằng Unity 6.3 LTS, chọn **Owned Game → Create Bootstra
 Kiểm thử Windows (cần Python 3 và .NET SDK): `./scripts/check-windows.ps1`. Cloud: `bash scripts/build-dotnet.sh`, sau đó `python tests/smoke.py`. Xem hướng dẫn C cho cài đặt sạch, demo lỗi và build Unity IL2CPP.
 
 Unity 6.3 LTS còn hỗ trợ tới 12/2027; .NET 10 LTS tới 14/11/2028, theo tài liệu chính thức đã kiểm tra. Không tự nâng project Unity 2020 nếu được cung cấp sau này: cần đánh giá riêng.
+
+## Docker (mock server + client kiểm thử)
+
+Cài Docker Desktop, dùng Linux containers/WSL2. Từ root checkout mới nhất:
+
+```powershell
+docker compose up -d --build --wait mock-server
+docker compose --profile check run --rm --build client-probe
+```
+
+Để chơi có giao diện, mở `game-client` bằng Unity Editor trên Windows, kết nối Local Meadow tại `127.0.0.1:5077`. Container probe không phải game Unity có đồ họa. Dừng server bằng `docker compose down`. [Hướng dẫn Docker đầy đủ](docs/DOCKER.md), [kết quả Docker thực tế](reports/DOCKER-VALIDATION.md). Các ZIP cũ trong downloads là snapshot trước khi thêm Docker; dùng Git checkout mới nhất cho workflow này.

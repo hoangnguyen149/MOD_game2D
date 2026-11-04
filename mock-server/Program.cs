@@ -4,7 +4,9 @@ using System.Security.Cryptography;
 using System.Text;
 using OwnedGame.Net;
 var builder=WebApplication.CreateBuilder(args);
-builder.WebHost.UseUrls("http://127.0.0.1:5077");
+// Docker port forwarding reaches the bridge interface. Native mode remains loopback-only.
+bool containerDemo=builder.Configuration.GetValue<bool>("ContainerDemo");
+builder.WebHost.UseUrls(containerDemo?"http://0.0.0.0:5077":"http://127.0.0.1:5077");
 builder.WebHost.ConfigureKestrel(o=>o.Limits.MaxRequestBodySize=8192);
 builder.Services.ConfigureHttpJsonOptions(o=>o.SerializerOptions.IncludeFields=true);
 // No request body/header logging; never include exception text derived from credentials.
@@ -15,7 +17,7 @@ var sessions=new ConcurrentDictionary<string,Session>();
 var salt=Encoding.UTF8.GetBytes("OwnedAdventure-demo-only");
 var expected=Convert.FromHexString("65362b97377c6633ae64bc328476c7c6d297b61b1e0f078020b0afb7a0758731");
 app.Use(async(context,next)=>{
- if(context.Connection.RemoteIpAddress is not { } ip || !IPAddress.IsLoopback(ip)){context.Response.StatusCode=403;return;}
+ if(context.Connection.RemoteIpAddress is not { } ip || (!containerDemo && !IPAddress.IsLoopback(ip))){context.Response.StatusCode=403;return;}
  if(enableFaults){
   var fault=context.Request.Headers["X-Demo-Fault"].ToString();
   if(fault=="login-error" && context.Request.Path=="/login"){context.Response.StatusCode=401;return;}

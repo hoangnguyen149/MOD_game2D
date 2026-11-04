@@ -1,0 +1,6 @@
+ Container owned-docker-check-mock-server-1  Stopping
+ Container owned-docker-check-mock-server-1  Stopped
+ Container owned-docker-check-mock-server-1  Removing
+ Container owned-docker-check-mock-server-1  Removed
+ Network owned-docker-check_default  Removing
+ Network owned-docker-check_default  Removed

@@ -34,6 +34,10 @@ Không cần Administrator để chạy game/launcher đã cài dependency. Vi�
 
 Không chạy `Mod_Mabu6sao_Tv.exe`/`Auto Manager.exe` tham khảo để thử prototype.
 
+## Chạy mock server trong Docker
+
+Có thể thay bước chạy server native bằng Docker Compose: xem [hướng dẫn Docker](DOCKER.md). Client Unity/launcher GUI tiếp tục chạy trên Windows host. Không chạy hai server cùng cổng 5077. Các gói ZIP đã công bố là snapshot v1/v2 trước cập nhật Docker.
+
 ## Khởi động server
 
 Tại root repository, PowerShell:

@@ -27,3 +27,5 @@ Start server with `--DemoFaults=true` to allow request header `X-Demo-Fault`:
 Without the explicit flag, those headers have no effect. Unity config supplies matching named demo choices. No endpoint accesses the reference game's server.
 
 Launcher starts a selected client using ProcessStartInfo.ArgumentList with window dimensions, a profile GUID and server ID. Only the non-secret demo username hint goes through `OWNED_TEST_USER`. No password/token goes through args, environment, config or launcher logs in the production launcher. Client owns password entry and login, so session IPC is unnecessary. Test-only ClientProbe has a public synthetic credential fixture; it is not the Unity executable and is not packaged as a game.
+
+Docker mode: Compose explicitly enables `ContainerDemo=true`, binding the server to its container interface and allowing bridge source IPs. The published host port remains `127.0.0.1:5077:5077`. Native defaults stay loopback-only; GameApi retains the exact loopback destination restriction. ClientProbe shares the service network namespace. See docs/DOCKER.md.

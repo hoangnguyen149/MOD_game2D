@@ -1,0 +1,9 @@
+PASS published host port reaches Docker health API
+PASS demo-fault mode matches requested Compose configuration
+PASS Docker demo login rejection
+PASS Docker demo timeout response remains bounded
+PASS Docker disconnect scenario logs in before dropping position
+PASS Docker demo aborts position connection
+PASS server stays healthy after timeout/drop
+PASS container logs omit test passwords and issued tokens
+8 Docker host checks passed

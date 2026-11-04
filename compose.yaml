@@ -1,0 +1,36 @@
+services:
+  mock-server:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      target: server
+    ports:
+      - "127.0.0.1:5077:5077"
+    environment:
+      ContainerDemo: "true"
+      DemoFaults: "false"
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m
+    healthcheck:
+      test: ["CMD", "dotnet", "health/HealthProbe.dll"]
+      interval: 5s
+      timeout: 3s
+      start_period: 10s
+      retries: 8
+    stop_grace_period: 10s
+
+  client-probe:
+    profiles: ["check"]
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      target: probe
+    # Uses the server's loopback namespace; does not relax GameApi's host allowlist.
+    network_mode: "service:mock-server"
+    depends_on:
+      mock-server:
+        condition: service_healthy
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m

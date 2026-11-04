@@ -1,0 +1,15 @@
+PASS published host port reaches Docker health API
+PASS demo-fault mode matches requested Compose configuration
+PASS runtime container uses non-root app user
+PASS runtime root filesystem is read-only
+PASS port published only on host IPv4 loopback
+PASS anonymous world request rejected through published port
+PASS incorrect credentials rejected through Docker
+PASS Docker login issues session
+PASS Docker character list payload
+PASS Docker position update payload
+PASS Docker character ownership validation
+PASS Docker logout revokes session
+PASS fault headers inactive without explicit opt-in
+PASS container logs omit test passwords and issued tokens
+14 Docker host checks passed

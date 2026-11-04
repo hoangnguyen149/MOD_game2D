@@ -1,5 +1,7 @@
 # Gói tải
 
+Các ZIP v2 là snapshot trước cập nhật Docker. Để dùng Docker, lấy checkout `main` mới nhất và xem [hướng dẫn Docker](../docs/DOCKER.md); không cần tải lại các gói Windows.
+
 ## Phiên bản v2 hiện tại
 
 - [Source + báo cáo v2](OwnedAdventure-v2-source-reports.zip).
